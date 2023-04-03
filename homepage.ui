@@ -52,7 +52,7 @@
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#00557f;&quot;&gt;CineMax&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00273a;&quot;&gt;Anytime.Anywhere&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#00557f;&quot;&gt;CineMax&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00273a;&quot;&gt;Booking, redefined.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -136,30 +136,6 @@ QLineEdit:focus{
       </item>
      </layout>
     </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>260</y>
-       <width>201</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-	
-	font: 9pt &quot;Nasalization Rg&quot;;
-	color: rgb(0, 85, 127);
-	background-color: rgb(255, 255, 255,0);
-}
-QLabel:hover{
-color: rgb(0, 39, 58);
-}</string>
-     </property>
-     <property name="text">
-      <string>Not a user? Sign up here....</string>
-     </property>
-    </widget>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
@@ -213,6 +189,31 @@ QLineEdit:focus{
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>250</y>
+       <width>171</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	font: 9pt &quot;Nasalization Rg&quot;;
+	color: rgb(0, 85, 127);
+	background-color: rgb(255, 255, 255,0);
+	border:none;
+	background-color: rgba(135, 200, 120, 0);
+}
+QPushButton:hover{
+	color: rgb(0, 39, 58);
+}</string>
+     </property>
+     <property name="text">
+      <string>Not a user? Sign up here...</string>
+     </property>
     </widget>
    </widget>
    <zorder>frame_2</zorder>
