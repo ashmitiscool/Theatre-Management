@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
+    <width>500</width>
     <height>550</height>
    </rect>
   </property>
@@ -18,7 +18,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>450</width>
+     <width>500</width>
      <height>550</height>
     </rect>
    </property>
@@ -34,6 +34,189 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>301</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#00557f;&quot;&gt;CineMax&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00273a;&quot;&gt;Anytime.Anywhere&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>381</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+border-radius:30px;
+	background-color: rgba(243, 238, 255, 80);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>321</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	font: 15pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(239, 242, 255, 0);
+	color: rgb(0, 85, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>Password:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border:none;
+	border-radius:10px;
+	padding:10px;
+	font: 12pt &quot;Nasalization Rg&quot;;
+	color: rgb(0, 85, 127,100);
+	background-color: rgba(56, 176, 166, 150);
+}
+
+QLineEdit:hover{
+	background-color: rgba(56, 176, 166, 100);
+}
+
+QLineEdit:focus{
+	background-color: rgba(56, 176, 166, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Enter Password...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>260</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	
+	font: 9pt &quot;Nasalization Rg&quot;;
+	color: rgb(0, 85, 127);
+	background-color: rgb(255, 255, 255,0);
+}
+QLabel:hover{
+color: rgb(0, 39, 58);
+}</string>
+     </property>
+     <property name="text">
+      <string>Not a user? Sign up here....</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>321</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	font: 15pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(239, 242, 255, 0);
+	color: rgb(0, 85, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>Username:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border:none;
+	border-radius:10px;
+	padding:10px;
+	font: 12pt &quot;Nasalization Rg&quot;;
+	color: rgb(0, 85, 127,100);
+	background-color: rgba(56, 176, 166, 150);
+}
+
+QLineEdit:hover{
+	background-color: rgba(56, 176, 166, 100);
+}
+
+QLineEdit:focus{
+	background-color: rgba(56, 176, 166, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Enter Username...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <zorder>frame_2</zorder>
+   <zorder>label</zorder>
   </widget>
  </widget>
  <resources/>
