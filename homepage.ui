@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>500</width>
-    <height>550</height>
+    <height>581</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QFrame" name="frame">
+  <widget class="QFrame" name="bg">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>500</width>
-     <height>550</height>
+     <height>581</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -34,7 +34,7 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="logo">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -58,13 +58,13 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_2">
+   <widget class="QFrame" name="input">
     <property name="geometry">
      <rect>
       <x>60</x>
       <y>220</y>
       <width>381</width>
-      <height>291</height>
+      <height>331</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -88,9 +88,9 @@ border-radius:30px;
        <height>73</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QVBoxLayout" name="pwbox">
       <item>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="pass">
         <property name="styleSheet">
          <string notr="true">QLabel{
 	font: 15pt &quot;Nasalization Rg&quot;;
@@ -104,7 +104,7 @@ border-radius:30px;
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="pwd">
         <property name="styleSheet">
          <string notr="true">QLineEdit{
 	border:none;
@@ -126,11 +126,17 @@ QLineEdit:focus{
         <property name="text">
          <string/>
         </property>
+        <property name="maxLength">
+         <number>24</number>
+        </property>
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
         </property>
         <property name="placeholderText">
          <string>Enter Password...</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -145,7 +151,7 @@ QLineEdit:focus{
        <height>73</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QVBoxLayout" name="userbox">
       <item>
        <widget class="QLabel" name="label_2">
         <property name="styleSheet">
@@ -161,7 +167,7 @@ QLineEdit:focus{
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="name">
         <property name="styleSheet">
          <string notr="true">QLineEdit{
 	border:none;
@@ -186,15 +192,18 @@ QLineEdit:focus{
         <property name="placeholderText">
          <string>Enter Username...</string>
         </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
      </layout>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="signup">
      <property name="geometry">
       <rect>
        <x>170</x>
-       <y>250</y>
+       <y>300</y>
        <width>171</width>
        <height>23</height>
       </rect>
@@ -215,11 +224,104 @@ QPushButton:hover{
       <string>Not a user? Sign up here...</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>250</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border:none;
+	border-radius:20px;
+	font: 10pt &quot;Nasalization Rg&quot;;
+	color: rgba(0, 85, 127, 255);
+	background-color: rgba(111, 180, 217, 210);
+}
+
+QPushButton:focus{
+	background-color: rgba(111, 180, 217, 150);
+}
+
+QPushButton:hover{
+	background-color: rgba(111, 180, 217, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>Submit</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>250</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border:none;
+	border-radius:20px;
+	font: 10pt &quot;Nasalization Rg&quot;;
+	color: rgba(0, 85, 127, 255);
+	background-color: rgba(111, 180, 217, 210);
+}
+
+QPushButton:focus{
+	background-color: rgba(111, 180, 217, 150);
+}
+
+QPushButton:hover{
+	background-color: rgba(111, 180, 217, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
    </widget>
-   <zorder>frame_2</zorder>
-   <zorder>label</zorder>
+   <zorder>input</zorder>
+   <zorder>logo</zorder>
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pwd</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>name</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
