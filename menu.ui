@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>557</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-6</y>
+     <width>723</width>
+     <height>563</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{	
+background-color: rgb(117, 99, 255);
+	}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>173</y>
+      <width>362</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; color:#00557f;&quot;&gt;CineMax&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#00273a;&quot;&gt;Booking, redefined.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>74</y>
+      <width>333</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+	border:none;
+	border-radius:50px;
+	background-color: rgb(117, 99, 200);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>86</y>
+       <width>252</width>
+       <height>276</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(145, 177, 194,150);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,80);
+}</string>
+        </property>
+        <property name="text">
+         <string>Book now!</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(145, 177, 194,150);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,80);
+}</string>
+        </property>
+        <property name="text">
+         <string>Profile</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(145, 177, 194,150);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,80);
+}</string>
+        </property>
+        <property name="text">
+         <string>Logout</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(145, 177, 194,150);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,80);
+}</string>
+        </property>
+        <property name="text">
+         <string>About</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(145, 177, 194,120);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,160);
+}</string>
+        </property>
+        <property name="text">
+         <string>Quit</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

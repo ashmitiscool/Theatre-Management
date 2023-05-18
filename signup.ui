@@ -56,7 +56,7 @@
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>60</y>
+      <y>20</y>
       <width>301</width>
       <height>151</height>
      </rect>
@@ -64,13 +64,12 @@
     <property name="styleSheet">
      <string notr="true">QLabel{
 	padding: 10;
-	color: rgb(0, 85, 127);
 	font: 38pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#00557f;&quot;&gt;CineMax&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00273a;&quot;&gt;Booking, redefined.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#00273a;&quot;&gt;Sign Up&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -80,9 +79,9 @@
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>220</y>
+      <y>150</y>
       <width>381</width>
-      <height>331</height>
+      <height>401</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -101,7 +100,7 @@ border-radius:30px;
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>160</y>
+       <y>150</y>
        <width>321</width>
        <height>73</height>
       </rect>
@@ -217,36 +216,11 @@ QLineEdit:focus{
       </item>
      </layout>
     </widget>
-    <widget class="QPushButton" name="signup">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
-       <y>300</y>
-       <width>171</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-	font: 9pt &quot;Nasalization Rg&quot;;
-	color: rgb(0, 85, 127);
-	background-color: rgb(255, 255, 255,0);
-	border:none;
-	background-color: rgba(135, 200, 120, 0);
-}
-QPushButton:hover{
-	color: rgb(0, 39, 58);
-}</string>
-     </property>
-     <property name="text">
-      <string>Not a user? Sign up here...</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="submit">
+    <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>250</y>
+       <y>330</y>
        <width>101</width>
        <height>41</height>
       </rect>
@@ -272,11 +246,11 @@ QPushButton:hover{
       <string>Submit</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="reset">
+    <widget class="QPushButton" name="pushButton_2">
      <property name="geometry">
       <rect>
        <x>130</x>
-       <y>250</y>
+       <y>330</y>
        <width>101</width>
        <height>41</height>
       </rect>
@@ -302,6 +276,69 @@ QPushButton:hover{
       <string>Reset</string>
      </property>
     </widget>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>321</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="pwbox_3">
+      <item>
+       <widget class="QLabel" name="pass_3">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	font: 15pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(239, 242, 255, 0);
+	color: rgb(0, 85, 127);
+}</string>
+        </property>
+        <property name="text">
+         <string>Confirm Password:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="pwd_3">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border:none;
+	border-radius:10px;
+	padding:10px;
+	font: 12pt &quot;Nasalization Rg&quot;;
+	color: rgb(0, 85, 127,100);
+	background-color: rgba(56, 176, 166, 150);
+}
+
+QLineEdit:hover{
+	background-color: rgba(56, 176, 166, 100);
+}
+
+QLineEdit:focus{
+	background-color: rgba(56, 176, 166, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="maxLength">
+         <number>24</number>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Re-enter Password...</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <zorder>input</zorder>
    <zorder>logo</zorder>
@@ -310,7 +347,7 @@ QPushButton:hover{
  <resources/>
  <connections>
   <connection>
-   <sender>reset</sender>
+   <sender>pushButton_2</sender>
    <signal>clicked()</signal>
    <receiver>pwd</receiver>
    <slot>clear()</slot>
@@ -326,7 +363,7 @@ QPushButton:hover{
    </hints>
   </connection>
   <connection>
-   <sender>reset</sender>
+   <sender>pushButton_2</sender>
    <signal>clicked()</signal>
    <receiver>name</receiver>
    <slot>clear()</slot>

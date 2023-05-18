@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="main">
+    <file>samp.jpg</file>
+    <file>sett.png</file>
+    <file>srch.png</file>
+  </qresource>
+</RCC>
