@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton
+from PyQt5.QtWidgets import QMainWindow, QMessageBox, QApplication, QLabel, QPushButton
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 import sys
@@ -11,25 +11,38 @@ class Ui_Menu(QMainWindow):
         uic.loadUi('menu.ui',self)
 
         # Defining Widgets
-        #self.submitButton = self.findChild(QPushButton, 'submit')
+        self.logoutButton = self.findChild(QPushButton, 'logoutButton')
 
         # When button pressed, Open new window
-        #self.submitButton.clicked.connect(self.openMenuWindow)
+        self.logoutButton.clicked.connect(self.openDialogBox)
+
+
+
+    def openDialogBox(self):
+        # Create a message box object
+        msg = QMessageBox()
+        # Set the text and icon of the message box
+        msg.setText("Are you sure you want to log out?")
+        msg.setIcon(QMessageBox.Information)
+        # Add an OK button to the message box
+        msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+        # Show the message box and get the user response
+        response = msg.exec_()
+        # If the user clicked OK, open the homepage window
+        if response == QMessageBox.Yes:
+            self.openLoginWindow()
+        else:
+            pass
+
+    def openLoginWindow(self):
+        from homepageCode import Ui_HomePage
+        self.close()
+        self.menu_window = Ui_HomePage()
+        self.menu_window.show()
 
 
 
 
 
-    # def openMenuWindow(self):
-    #     self.window = QtWidgets.QMainWindow()
-    #     self.ui = Ui_Menu()
-    #     self.ui.setupUi(self.window)
-    #     self.window.show()
 
 
-
-
-app = QApplication(sys.argv)
-UIWindow = Ui_Menu()
-UIWindow.show()
-app.exec_()
