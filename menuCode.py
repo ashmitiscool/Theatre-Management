@@ -12,9 +12,11 @@ class Ui_Menu(QMainWindow):
 
         # Defining Widgets
         self.logoutButton = self.findChild(QPushButton, 'logoutButton')
+        self.exitButton = self.findChild(QPushButton, 'quitButton')
 
         # When button pressed, Open new window
         self.logoutButton.clicked.connect(self.openDialogBox)
+        self.exitButton.clicked.connect(self.exitProg)
 
 
 
@@ -39,6 +41,9 @@ class Ui_Menu(QMainWindow):
         self.close()
         self.menu_window = Ui_HomePage()
         self.menu_window.show()
+
+    def exitProg(self):
+        QApplication.quit()
 
 
 

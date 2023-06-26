@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QLineEdit,QMainWindow, QApplication, QLabel, QPushBu
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 import sys
-
+# Actually login page
 class Ui_HomePage(QMainWindow):
     def __init__(self):
         super(Ui_HomePage, self).__init__()
