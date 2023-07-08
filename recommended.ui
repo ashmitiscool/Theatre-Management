@@ -71,8 +71,8 @@ QScrollBar::handle:vertical:pressed{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>703</width>
-        <height>918</height>
+        <width>709</width>
+        <height>912</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -126,7 +126,7 @@ QScrollBar::handle:vertical:pressed{
            <bool>true</bool>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="movieSearchBox">
           <property name="geometry">
            <rect>
             <x>32</x>

@@ -13,11 +13,20 @@ class Ui_Menu(QMainWindow):
         # Defining Widgets
         self.logoutButton = self.findChild(QPushButton, 'logoutButton')
         self.exitButton = self.findChild(QPushButton, 'quitButton')
+        self.bookButton = self.findChild(QPushButton, 'bookButton')
 
         # When button pressed, Open new window
         self.logoutButton.clicked.connect(self.openDialogBox)
         self.exitButton.clicked.connect(self.exitProg)
+        self.bookButton.clicked.connect(self.openRecmded)
 
+
+
+    def openRecmded(self):
+        from rcmmdedMovieCode import Ui_recommended
+        self.close()
+        self.rcmnded_window = Ui_recommended()
+        self.rcmnded_window.show()
 
 
     def openDialogBox(self):

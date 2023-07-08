@@ -99,7 +99,7 @@ background-color: rgb(117, 99, 255);
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="bookButton">
         <property name="minimumSize">
          <size>
           <width>250</width>

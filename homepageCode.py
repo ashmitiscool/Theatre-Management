@@ -3,6 +3,7 @@ from PyQt5 import QtWidgets
 from PyQt5 import uic
 import sys
 # Actually login page
+# Page to start the program
 class Ui_HomePage(QMainWindow):
     def __init__(self):
         super(Ui_HomePage, self).__init__()
