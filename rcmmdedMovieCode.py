@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QLineEdit, QWidget, QMessageBox, QApplication, QLabel, QPushButton
 from PyQt5 import QtWidgets
-from PyQt5 import uic
+from PyQt5 import uic,QtGui,QtCore
 from PyQt5.QtCore import QStringListModel
 from PyQt5.QtWidgets import QCompleter
 from PyQt5.QtGui import QPixmap
@@ -19,7 +19,7 @@ class Ui_recommended(QWidget):
         self.searchButton = self.findChild(QPushButton, 'searchButton')
         self.movieLabel1 = self.findChild(QLabel, 'movieLabel1')
         self.movieName1 = self.findChild(QLabel, 'movieName1')
-        #Adds search icon to button
+        #Adds search icon to button(If error, delete the two lines below this comment)
         self.pushButton.setIcon(QtGui.QIcon('Pictures\\srch.png'))
         self.pushButton.setIconSize(QtCore.QSize(16,16))
 
