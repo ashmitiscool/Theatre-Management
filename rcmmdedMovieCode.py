@@ -20,8 +20,8 @@ class Ui_recommended(QWidget):
         self.movieLabel1 = self.findChild(QLabel, 'movieLabel1')
         self.movieName1 = self.findChild(QLabel, 'movieName1')
         #Adds search icon to button(If error, delete the two lines below this comment)
-        self.pushButton.setIcon(QtGui.QIcon('Pictures\\srch.png'))
-        self.pushButton.setIconSize(QtCore.QSize(16,16))
+        self.searchButton.setIcon(QtGui.QIcon('Pictures\\srch.png'))
+        self.searchButton.setIconSize(QtCore.QSize(16,16))
 
 
 
