@@ -20,7 +20,9 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(248, 251, 255);</string>
+   <string notr="true">
+	background-color:rgb(242, 234, 255);
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -70,9 +72,9 @@ QScrollBar::handle:vertical:pressed{
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-80</y>
-        <width>709</width>
-        <height>912</height>
+        <y>0</y>
+        <width>703</width>
+        <height>918</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -85,7 +87,10 @@ QScrollBar::handle:vertical:pressed{
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          <string notr="true">QFrame{
+	
+	background-color:rgb(242, 234, 255);
+}</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -129,26 +134,25 @@ QScrollBar::handle:vertical:pressed{
          <widget class="QLineEdit" name="movieSearchBox">
           <property name="geometry">
            <rect>
-            <x>32</x>
-            <y>131</y>
-            <width>559</width>
-            <height>38</height>
+            <x>25</x>
+            <y>123</y>
+            <width>561</width>
+            <height>53</height>
            </rect>
           </property>
           <property name="styleSheet">
            <string notr="true">QLineEdit{
+	padding:15px;
+	font: 14pt &quot;Nasalization Rg&quot;;
 	border:none;
-	font: 10pt &quot;Nasalization Rg&quot;;
-	border-radius:15px;
-	padding:6px;
-	background-color: rgb(145, 177, 194,150);
+	border-radius:20px;
+	background-color: rgb(199, 176, 255,100);
 }
-
 QLineEdit:hover{
-	background-color: rgb(145, 177, 194,100);
+	background-color: rgb(199, 176, 255,50);
 }
 QLineEdit:focus{
-	background-color: rgb(145, 177, 194,80);
+	background-color: rgb(199, 176, 255,150);
 }</string>
           </property>
           <property name="placeholderText">
@@ -161,10 +165,10 @@ QLineEdit:focus{
          <widget class="QPushButton" name="searchButton">
           <property name="geometry">
            <rect>
-            <x>595</x>
-            <y>131</y>
-            <width>38</width>
-            <height>38</height>
+            <x>594</x>
+            <y>124</y>
+            <width>51</width>
+            <height>50</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -176,15 +180,15 @@ QLineEdit:focus{
           <property name="styleSheet">
            <string notr="true">QPushButton{
 	border:none;
-	border-radius:15px;
-	background-color: rgb(145, 177, 194,150);
+	border-radius:25px;
+	background-color: rgb(145, 177, 194,120);
 	font: 14pt &quot;Nasalization Rg&quot;;
 }
 QPushButton:hover{
 	background-color: rgb(145, 177, 194,100);
 }
 QPushButton:pressed{
-	background-color: rgb(145, 177, 194,80);
+	background-color: rgb(145, 177, 194,160);
 }</string>
           </property>
           <property name="text">
@@ -201,7 +205,7 @@ QPushButton:pressed{
             <x>22</x>
             <y>208</y>
             <width>657</width>
-            <height>663</height>
+            <height>664</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="grid">
@@ -380,6 +384,39 @@ QPushButton:pressed{
             </widget>
            </item>
           </layout>
+         </widget>
+         <widget class="QPushButton" name="backButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>51</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>38</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	border-radius:25px;
+	background-color: rgb(145, 177, 194,120);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,160);
+}</string>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
          </widget>
         </widget>
        </item>

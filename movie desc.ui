@@ -128,9 +128,43 @@
       <string/>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>14</y>
+       <width>38</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>38</width>
+       <height>38</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border:none;
+	border-radius:15px;
+	background-color: rgb(145, 177, 194,150);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+    </widget>
     <zorder>banner</zorder>
     <zorder>name</zorder>
     <zorder>YearRating</zorder>
+    <zorder>pushButton_6</zorder>
    </widget>
    <widget class="QLabel" name="picture">
     <property name="geometry">

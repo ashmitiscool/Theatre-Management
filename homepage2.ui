@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>501</width>
-    <height>613</height>
+    <height>571</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -290,17 +290,6 @@ QPushButton:hover{
     <zorder>logo</zorder>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>501</width>
-     <height>18</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

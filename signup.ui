@@ -339,6 +339,36 @@ QLineEdit:focus{
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border:none;
+	border-radius:20px;
+	font: 10pt &quot;Nasalization Rg&quot;;
+	color: rgba(0, 85, 127, 255);
+	background-color: rgba(111, 180, 217, 210);
+}
+
+QPushButton:focus{
+	background-color: rgba(111, 180, 217, 150);
+}
+
+QPushButton:hover{
+	background-color: rgba(111, 180, 217, 250);
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
    </widget>
    <zorder>input</zorder>
    <zorder>logo</zorder>
