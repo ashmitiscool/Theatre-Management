@@ -3,6 +3,7 @@ from PyQt5 import QtWidgets
 from PyQt5 import uic
 from PyQt5.QtCore import QStringListModel
 from PyQt5.QtWidgets import QCompleter
+from PyQt5.QtGui import QPixmap
 import PyQt5
 import sys
 
@@ -15,10 +16,20 @@ class Ui_recommended(QWidget):
 
         # Defining Widgets
         self.movieSearchBox = self.findChild(QLineEdit, 'movieSearchBox')
+        self.searchButton = self.findChild(QPushButton, 'searchButton')
+        self.movieLabel1 = self.findChild(QLabel, 'movieLabel1')
+        self.movieName1 = self.findChild(QLabel, 'movieName1')
+
+
+
+        # Connecting buttons and stuff
+        self.searchButton.clicked.connect(lambda:self.displayMovies())
 
         # Create a QStringListModel and a QCompleter
         self.model = QStringListModel()
-        self.model.setStringList(['Avatar', 'Titanic', 'The Godfather', 'The Dark Knight', 'Inception'])
+        # List of movies here (Should be extracted from SQL)
+        self.movieList = ['Avatar', 'Titanic', 'The Godfather', 'The Dark Knight', 'Inception']
+        self.model.setStringList(self.movieList)
 
         self.completer = QCompleter()
         self.completer.setModel(self.model)
@@ -27,14 +38,20 @@ class Ui_recommended(QWidget):
 
 
         # Set the model and the completer for the movieSearchBox
-        # Error may be here
         self.movieSearchBox.setCompleter(self.completer)
 
-        # Add some data to the model, either from a list or from a database query
-        # For example, using a list of movie names
+        self.imageList = {'Avatar':"C:\\Users\\ashmi\\Downloads\\projectImages\\lambos2.jpg"}
+
+    def displayMovies(self):
+        # Extracting movie from the LineEdit
+        mov = self.movieSearchBox.text()
+        if mov in self.movieList:
+            pixmap = QPixmap(self.imageList[mov])
+            self.movieLabel1.setPixmap(pixmap)
+            self.movieName1.setText(mov)
 
 
-        # When button pressed, Open new window
-        # self.logoutButton.clicked.connect(self.openDialogBox)
+
+
 
 

@@ -70,7 +70,7 @@ QScrollBar::handle:vertical:pressed{
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>-80</y>
         <width>709</width>
         <height>912</height>
        </rect>
@@ -158,7 +158,7 @@ QLineEdit:focus{
            <bool>true</bool>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="searchButton">
           <property name="geometry">
            <rect>
             <x>595</x>
@@ -200,8 +200,8 @@ QPushButton:pressed{
            <rect>
             <x>22</x>
             <y>208</y>
-            <width>622</width>
-            <height>616</height>
+            <width>657</width>
+            <height>663</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="grid">
@@ -220,8 +220,8 @@ QPushButton:pressed{
            <property name="bottomMargin">
             <number>5</number>
            </property>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label">
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_5">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -237,16 +237,13 @@ QPushButton:pressed{
              <property name="text">
               <string/>
              </property>
-             <property name="scaledContents">
-              <bool>true</bool>
-             </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="label_3">
+           <item row="5" column="2">
+            <widget class="QLabel" name="label_6">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -289,7 +286,7 @@ QPushButton:pressed{
              </property>
             </widget>
            </item>
-           <item row="1" column="0">
+           <item row="5" column="0">
             <widget class="QLabel" name="label_4">
              <property name="minimumSize">
               <size>
@@ -311,8 +308,47 @@ QPushButton:pressed{
              </property>
             </widget>
            </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="movieLabel1">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
            <item row="1" column="1">
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="movieName2">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="movieButton1">
+             <property name="text">
+              <string>Book Now</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_3">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -333,22 +369,10 @@ QPushButton:pressed{
              </property>
             </widget>
            </item>
-           <item row="1" column="2">
-            <widget class="QLabel" name="label_6">
-             <property name="minimumSize">
-              <size>
-               <width>200</width>
-               <height>300</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>200</width>
-               <height>300</height>
-              </size>
-             </property>
+           <item row="1" column="0">
+            <widget class="QLabel" name="movieName1">
              <property name="text">
-              <string/>
+              <string>TextLabel</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
