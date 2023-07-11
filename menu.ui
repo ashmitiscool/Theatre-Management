@@ -24,7 +24,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QFrame{	
-background-color: rgb(117, 99, 255);
+background-color: rgb(52, 52, 52);
 	}</string>
    </property>
    <property name="frameShape">
@@ -42,16 +42,21 @@ background-color: rgb(117, 99, 255);
       <height>169</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Nasalization Rg</family>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
 	padding: 10;
-	color: rgb(0, 85, 127);
+	color: rgb(248, 251, 255)
 	font: 38pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; color:#00557f;&quot;&gt;CineMax&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#00273a;&quot;&gt;Booking, redefined.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:50pt; color:#f4f7fb;&quot;&gt;CineMax&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#f4f7fb;&quot;&gt;Booking, redefined.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -79,7 +84,7 @@ background-color: rgb(117, 99, 255);
      <string notr="true">QFrame{
 	border:none;
 	border-radius:50px;
-	background-color: rgb(117, 99, 200);
+	background-color: rgb(248, 251, 255);
 }</string>
     </property>
     <property name="frameShape">
