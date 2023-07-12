@@ -30,7 +30,42 @@ class Ui_Profile(QMainWindow):
         self.ph.setReadOnly(True)
         self.loc.setText(loc)
         self.loc.setReadOnly(True)
+
+        self.editfname.clicked.connect(self.changeFname)
+        self.editlname.clicked.connect(self.changeLname)
+        self.editemail.clicked.connect(self.changeEmail)
+        self.editph.clicked.connect(self.changePh)
+        self.editloc.clicked.connect(self.changeLoc)
+        self.done.clicked.connect(self.apply)
         #closes file
-        #have to create a thing where pressing the pencil icon makes line editable...
-        #no time lol
         f.close()
+
+    def apply(self):
+        fname = self.fname.text()
+        lname = self.lname.text()
+        email = self.email.text()
+        ph = self.ph.text()
+        loc = self.loc.text()
+        fe = open('info.txt','w+')
+        txt = fname+','+lname+','+email+','+ph+','+loc
+        fe.write(txt)
+        fe.close()
+        from menuCode import Ui_Menu
+        self.close()
+        self.menu_window = Ui_Menu()
+        self.menu_window.show()
+    
+    def changeFname(self):
+        self.fname.setReadOnly(False)
+
+    def changeLname(self):
+        self.lname.setReadOnly(False)
+
+    def changeEmail(self):
+        self.email.setReadOnly(False)
+
+    def changePh(self):
+        self.ph.setReadOnly(False)
+
+    def changeLoc(self):
+        self.loc.setReadOnly(False)
