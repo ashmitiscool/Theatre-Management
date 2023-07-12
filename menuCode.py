@@ -19,6 +19,7 @@ class Ui_Menu(QMainWindow):
         self.logoutButton.clicked.connect(self.openDialogBox)
         self.exitButton.clicked.connect(self.exitProg)
         self.bookButton.clicked.connect(self.openRecmded)
+        self.pushButton_2.clicked.connect(self.openProfile)
 
 
 
@@ -28,6 +29,11 @@ class Ui_Menu(QMainWindow):
         self.rcmnded_window = Ui_recommended()
         self.rcmnded_window.show()
 
+    def openProfile(self):
+        from profile import Ui_Profile
+        self.close()
+        self.profile_wind = Ui_Profile()
+        self.profile_wind.show()
 
     def openDialogBox(self):
         # Create a message box object

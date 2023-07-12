@@ -146,7 +146,7 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="fname">
      <property name="geometry">
       <rect>
        <x>39</x>
@@ -206,7 +206,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QLineEdit" name="lname">
      <property name="geometry">
       <rect>
        <x>360</x>
@@ -230,7 +230,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="editfname">
      <property name="geometry">
       <rect>
        <x>260</x>
@@ -252,10 +252,10 @@ padding:5px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Pictures/tick.png</normaloff>Pictures/tick.png</iconset>
+       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="editlname">
      <property name="geometry">
       <rect>
        <x>573</x>
@@ -277,7 +277,7 @@ padding:5px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Pictures/tick.png</normaloff>Pictures/tick.png</iconset>
+       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
      </property>
     </widget>
     <widget class="QLabel" name="YearRating_5">
@@ -313,7 +313,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="editemail">
      <property name="geometry">
       <rect>
        <x>300</x>
@@ -335,10 +335,10 @@ padding:5px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Pictures/tick.png</normaloff>Pictures/tick.png</iconset>
+       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_3">
+    <widget class="QLineEdit" name="email">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -371,7 +371,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_4">
+    <widget class="QLineEdit" name="ph">
      <property name="geometry">
       <rect>
        <x>361</x>
@@ -404,7 +404,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="editph">
      <property name="geometry">
       <rect>
        <x>580</x>
@@ -419,6 +419,11 @@ padding:5px;
     border:none;
 }
 
+QPushButton:hover{
+	
+	color: rgb(255, 255, 255);
+}
+
 </string>
      </property>
      <property name="text">
@@ -426,7 +431,7 @@ padding:5px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Pictures/tick.png</normaloff>Pictures/tick.png</iconset>
+       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
      </property>
     </widget>
     <widget class="QLabel" name="YearRating_6">
@@ -462,7 +467,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_5">
+    <widget class="QLineEdit" name="loc">
      <property name="geometry">
       <rect>
        <x>39</x>
@@ -495,7 +500,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="editloc">
      <property name="geometry">
       <rect>
        <x>299</x>
@@ -517,7 +522,7 @@ padding:5px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>Pictures/tick.png</normaloff>Pictures/tick.png</iconset>
+       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
      </property>
     </widget>
     <widget class="QLabel" name="YearRating_7">
@@ -553,7 +558,7 @@ padding:5px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="done">
      <property name="geometry">
       <rect>
        <x>372</x>
