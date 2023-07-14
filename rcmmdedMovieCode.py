@@ -49,7 +49,7 @@ class Ui_recommended(QWidget):
         # Create a QStringListModel and a QCompleter
         self.model = QStringListModel()
         # List of movie names here (Should be extracted from SQL)
-        self.movieList = ['Avatar', 'Titanic', 'The Godfather', 'The Dark Knight', 'Inception']
+        self.movieList = ['Avatar', 'Titanic', 'The Godfather', 'The Dark Knight', 'Inception', 'Shrek', 'Spiderman']
         self.model.setStringList(self.movieList)
 
         # Completer stuff
@@ -65,14 +65,16 @@ class Ui_recommended(QWidget):
                           'Titanic':'Pictures\\samp.jpg',
                           'The Godfather':'Pictures\\samp.jpg',
                           'The Dark Knight':'Pictures\\samp.jpg',
-                          'Inception':'Pictures\\samp.jpg'}
+                          'Inception':'Pictures\\samp.jpg',
+                          'Shrek':'Pictures\\samp.jpg',
+                          'Spiderman':'Pictures\\samp.jpg'}
 
     # This is the point which marks the place to undo code XD
     def displayMovies(self):
         # Extracting movie from the LineEdit
         search_text = self.movieSearchBox.text()
         matching_movies = [movie for movie in self.movieList if search_text.upper() in movie.upper()]
-
+        displayed_movies = []
         for i in range(1, 7):  # Assuming you have 6 labels and buttons
             movieLabel = "movieLabel"+str(i)#Set compatibility
             movieName = "movieName"+str(i)#Set compatibility
@@ -83,6 +85,8 @@ class Ui_recommended(QWidget):
                     name = getattr(self, movieName)
                     label.setPixmap(pixmap)
                     name.setText(matching_movies[i-1])
+                    displayed_movies.append(matching_movies[i-1])
+                    print(displayed_movies)
                 except IndexError:
                     # Handle the case where there are less than 6 matching movies
                     print('Error1')
@@ -90,14 +94,14 @@ class Ui_recommended(QWidget):
             else:
                 try:
                     # Display random movies if no matching movies found
-                    random_movie = random.choice(self.movieList)
-                    print(random_movie)
-                    # Error in the following line
+                    possible_movies = [movie for movie in self.movieList if movie not in displayed_movies]
+                    random_movie = random.choice(possible_movies)
+                    displayed_movies.append(random_movie)
+                    #random_movie = random.choice(self.movieList)
+                    # Error can be in the following line
                     pixmap = QPixmap(self.imageList[random_movie])
-
                     label = getattr(self, movieLabel)
                     name = getattr(self, movieName)
-                    print(label,name)
                     label.setPixmap(pixmap)
                     name.setText(random_movie)
                 except:
