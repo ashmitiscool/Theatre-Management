@@ -7,7 +7,7 @@ from PyQt5.QtGui import QPixmap
 import PyQt5
 import random
 import sys
-
+a=1
 class Ui_recommended(QWidget):
     def __init__(self):
         super(Ui_recommended, self).__init__()
