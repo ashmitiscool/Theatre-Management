@@ -13,7 +13,7 @@ class Ui_recommended(QWidget):
         super(Ui_recommended, self).__init__()
 
         # Load the ui file
-        uic.loadUi("C:\\Users\\ashmi\\OneDrive\\Documents\\GitHub\\Theatre-Management\\recommended.ui", self)
+        uic.loadUi("recommended.ui", self)
 
         # Defining Widgets
         self.movieSearchBox = self.findChild(QLineEdit, 'movieSearchBox')
@@ -61,11 +61,11 @@ class Ui_recommended(QWidget):
         # Set the model and the completer for the movieSearchBox
         self.movieSearchBox.setCompleter(self.completer)
         # List of movies banners here (Should be extracted from SQL)
-        self.imageList = {'Avatar':"C:\\Users\\ashmi\\Downloads\\projectImages\\lambos2.jpg",
-                          'Titanic':'C:\\Users\\ashmi\\Downloads\\projectImages\\lambos2.jpg',
-                          'The Godfather':'C:\\Users\\ashmi\\Downloads\\projectImages\\lambos2.jpg',
-                          'The Dark Knight':'C:\\Users\\ashmi\\Downloads\\projectImages\\lambos2.jpg',
-                          'Inception':'C:\\Users\\ashmi\\Downloads\\projectImages\\lambos2.jpg'}
+        self.imageList = {'Avatar':'Pictures\\samp.jpg',
+                          'Titanic':'Pictures\\samp.jpg',
+                          'The Godfather':'Pictures\\samp.jpg',
+                          'The Dark Knight':'Pictures\\samp.jpg',
+                          'Inception':'Pictures\\samp.jpg'}
 
     # This is the point which marks the place to undo code XD
     def displayMovies(self):
@@ -74,11 +74,13 @@ class Ui_recommended(QWidget):
         matching_movies = [movie for movie in self.movieList if search_text.upper() in movie.upper()]
 
         for i in range(1, 7):  # Assuming you have 6 labels and buttons
+            movieLabel = "movieLabel"+str(i)#Set compatibility
+            movieName = "movieName"+str(i)#Set compatibility
             if i <= len(matching_movies):
                 try:
                     pixmap = QPixmap(self.imageList[matching_movies[i-1]])
-                    label = getattr(self, f"movieLabel{i}")
-                    name = getattr(self, f"movieName{i}")
+                    label = getattr(self, movieLabel)
+                    name = getattr(self, movieName)
                     label.setPixmap(pixmap)
                     name.setText(matching_movies[i-1])
                 except IndexError:
@@ -93,8 +95,8 @@ class Ui_recommended(QWidget):
                     # Error in the following line
                     pixmap = QPixmap(self.imageList[random_movie])
 
-                    label = getattr(self, f"movieLabel{i}")
-                    name = getattr(self, f"movieName{i}")
+                    label = getattr(self, movieLabel)
+                    name = getattr(self, movieName)
                     print(label,name)
                     label.setPixmap(pixmap)
                     name.setText(random_movie)
