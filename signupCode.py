@@ -2,6 +2,11 @@ from PyQt5.QtWidgets import QMessageBox, QDialog, QApplication, QLabel, QPushBut
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 import sys
+from homepageCode import *
+
+cursor.execute('show databases;')
+out = cursor.fetchall()
+print(out)
 
 class Ui_Signup(QDialog):
     def __init__(self):
