@@ -229,7 +229,7 @@ QPushButton:hover{
       <property name="geometry">
        <rect>
         <x>240</x>
-        <y>250</y>
+        <y>261</y>
         <width>101</width>
         <height>41</height>
        </rect>
@@ -259,7 +259,7 @@ QPushButton:hover{
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>250</y>
+        <y>261</y>
         <width>101</width>
         <height>41</height>
        </rect>
@@ -283,6 +283,28 @@ QPushButton:hover{
       </property>
       <property name="text">
        <string>Reset</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>233</y>
+        <width>160</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	font: 9pt &quot;Nasalization Rg&quot;;
+	color: rgb(255, 64, 137,200);
+	background-color: rgb(255, 255, 255,0);
+	border:none;
+	background-color: rgba(135, 200, 120, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>Something went wrong!</string>
       </property>
      </widget>
     </widget>

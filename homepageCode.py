@@ -12,6 +12,7 @@ sqlx = sql.split(',')
 hostx = sqlx[0]
 userx = sqlx[1]
 passwdx = sqlx[2]
+global conn
 conn = mys.connect(host = hostx, user = userx, passwd = passwdx)
 global cursor
 cursor = conn.cursor()
@@ -29,7 +30,7 @@ class Ui_HomePage(QMainWindow):
         self.submitButton = self.findChild(QPushButton, 'submit')
         self.signupButton = self.findChild(QPushButton, 'signup')
         self.resetButton = self.findChild(QPushButton, 'reset')
-
+        self.error.setVisible(False)
         self.nameLineEdit = self.findChild(QLineEdit, 'name')
         self.passLineEdit = self.findChild(QLineEdit, 'pwd')
 
@@ -43,6 +44,22 @@ class Ui_HomePage(QMainWindow):
 
 
     def openMenuWindow(self):
+        name = self.name.text()
+        pwd = self.pwd.text()
+        cursor.execute("use Cinemax;")
+        try:
+            cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
+            cursor.execute(cmd)
+            out = cursor.fetchall()
+            print(out)
+            if out==[]:
+                self.error.setVisible(True)
+                return 0
+            self.error.setVisible(False)
+        except:
+            self.error.setVisible(True)
+            return 0
+        
         from menuCode import Ui_Menu
         self.close()
         self.menu_window = Ui_Menu()
