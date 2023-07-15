@@ -4,9 +4,10 @@ from PyQt5 import uic
 import sys
 from homepageCode import *
 
-cursor.execute('show databases;')
-out = cursor.fetchall()
-print(out)
+##cursor.execute('drop database if exists Cinemax;')
+cursor.execute('create database if not exists Cinemax;')
+cursor.execute('use Cinemax;')
+cursor.execute('create table if not exists Users(ID int primary key not null auto_increment, passwd varchar(20) not null, uid varchar(30) not null, fname varchar(20), lname varchar(20), loc varchar(20), ph varchar(10));')
 
 class Ui_Signup(QDialog):
     def __init__(self):
@@ -18,14 +19,29 @@ class Ui_Signup(QDialog):
         # Defining Widgets
         self.submitButton = self.findChild(QPushButton, 'signupSubmit')
 
-        # When button pressed, Open new window
+        #Sets Error to Invisible
+        self.error.setVisible(False)
+
+        # When button pressed, Open new window and add info to database
         self.submitButton.clicked.connect(self.openDialogBox)
 
 
-
-
-
     def openDialogBox(self):
+        name = self.name.text()
+        pwd = self.pwd.text()
+        confpwd = self.confpwd.text()
+        if confpwd==pwd:
+            pwd = confpwd
+            self.error.setVisible(False)
+        else:
+            self.error.setVisible(True)
+            return 0
+                
+        cmd="insert into Users (passwd,uid,fname,lname,loc,ph) values (\'{}\',\'{}\',\'{}\',\'{}\',\'{}\',\'{}\');".format(pwd,name,'','','','')
+        cursor.execute(cmd)
+        conn.commit()
+        #(ID,passwd,uid,fname,lname,loc,ph)
+            
         # Create a message box object
         msg = QMessageBox()
         # Set the text and icon of the message box
