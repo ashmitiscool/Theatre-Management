@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>836</width>
-    <height>584</height>
+    <height>700</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -73,8 +73,8 @@ QScrollBar::handle:vertical:pressed{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>802</width>
-        <height>918</height>
+        <width>809</width>
+        <height>912</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -375,14 +375,17 @@ QPushButton:pressed{
            <item row="1" column="1">
             <widget class="QLabel" name="movieName2">
              <property name="text">
-              <string>TextLabel</string>
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
            <item row="1" column="0">
             <widget class="QLabel" name="movieName1">
              <property name="text">
-              <string>TextLabel</string>
+              <string/>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -392,7 +395,10 @@ QPushButton:pressed{
            <item row="1" column="2">
             <widget class="QLabel" name="movieName3">
              <property name="text">
-              <string>TextLabel</string>
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -406,14 +412,20 @@ QPushButton:pressed{
            <item row="6" column="2">
             <widget class="QLabel" name="movieName6">
              <property name="text">
-              <string>TextLabel</string>
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
            <item row="6" column="0">
             <widget class="QLabel" name="movieName4">
              <property name="text">
-              <string>TextLabel</string>
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -442,7 +454,10 @@ QPushButton:pressed{
            <item row="6" column="1">
             <widget class="QLabel" name="movieName5">
              <property name="text">
-              <string>TextLabel</string>
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -454,7 +469,7 @@ QPushButton:pressed{
             <x>10</x>
             <y>10</y>
             <width>51</width>
-            <height>50</height>
+            <height>51</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -466,15 +481,15 @@ QPushButton:pressed{
           <property name="styleSheet">
            <string notr="true">QPushButton{
 	border:none;
-	border-radius:25px;
-	background-color: rgb(145, 177, 194,120);
+	border-radius:15px;
+	background-color: rgb(145, 177, 194,150);
 	font: 14pt &quot;Nasalization Rg&quot;;
 }
 QPushButton:hover{
 	background-color: rgb(145, 177, 194,100);
 }
 QPushButton:pressed{
-	background-color: rgb(145, 177, 194,160);
+	background-color: rgb(145, 177, 194,80);
 }</string>
           </property>
           <property name="text">
