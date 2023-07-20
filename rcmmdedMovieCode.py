@@ -7,7 +7,6 @@ from PyQt5.QtGui import QPixmap
 import PyQt5
 import random
 import sys
-a=1
 class Ui_recommended(QWidget):
     def __init__(self):
         super(Ui_recommended, self).__init__()
@@ -35,6 +34,14 @@ class Ui_recommended(QWidget):
         self.movieName5 = self.findChild(QLabel, 'movieName5')
         self.movieName6 = self.findChild(QLabel, 'movieName6')
 
+        # Movie Buttons
+        self.movieButton1 = self.findChild(QPushButton, 'movieButton1')
+        self.movieButton2 = self.findChild(QPushButton, 'movieButton2')
+        self.movieButton3 = self.findChild(QPushButton, 'movieButton3')
+        self.movieButton4 = self.findChild(QPushButton, 'movieButton4')
+        self.movieButton5 = self.findChild(QPushButton, 'movieButton5')
+        self.movieButton6 = self.findChild(QPushButton, 'movieButton6')
+
         self.backButton = self.findChild(QPushButton, 'backButton')
         #Adds search icon to button(If error, delete the two lines below this comment)
         self.searchButton.setIcon(QtGui.QIcon('Pictures\\srch.png'))
@@ -43,6 +50,12 @@ class Ui_recommended(QWidget):
 
 
         # Connecting buttons and stuff
+        self.movieButton1.clicked.connect(lambda:self.displayMovieDesc())
+        self.movieButton2.clicked.connect(lambda:self.displayMovieDesc())
+        self.movieButton3.clicked.connect(lambda:self.displayMovieDesc())
+        self.movieButton4.clicked.connect(lambda:self.displayMovieDesc())
+        self.movieButton5.clicked.connect(lambda:self.displayMovieDesc())
+        self.movieButton6.clicked.connect(lambda:self.displayMovieDesc())
         self.searchButton.clicked.connect(lambda:self.displayMovies())
         self.backButton.clicked.connect(lambda:self.openHomePageWindow())
 
@@ -107,6 +120,15 @@ class Ui_recommended(QWidget):
                 except:
                     print('Error2')
 
+
+    def displayMovieDesc(self, mov='None'):
+        mov = self.movieName1.text()
+        print(mov)
+        if mov != '':
+            from movieDesc import Ui_movieDesc
+            self.close()
+            self.window = Ui_movieDesc(mov)
+            self.window.show()
 
     def openHomePageWindow(self):
         from menuCode import Ui_Menu
