@@ -2,25 +2,25 @@ from PyQt5.QtWidgets import QMainWindow, QMessageBox, QApplication, QLabel, QPus
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 import sys
+from homepageCode import *
+
+cursor.execute("use Cinemax;")
+cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
+cursor.execute(cmd)
+out = cursor.fetchall()
+out= out[0]
+email = out[2]
+finame = out[3]
+lname = out[4]
+loc = out[5]
+ph = out[6]
 
 class Ui_Profile(QMainWindow):
     def __init__(self):
         super(Ui_Profile,self).__init__()
+
         uic.loadUi('profile.ui',self)
-        #Opens File(Substitute for SQL for now)
-        f = open("info.txt",'r')
-        #reads file
-        infoStack = f.read()
-        #splits data
-        info = infoStack.split(',')
-        #assigns extracted data to variables
-        fname = info[0]
-        lname = info[1]
-        email = info[2]
-        ph = info[3]
-        loc = info[4]
-        #sets respective variables to line edits, makes line edits uneditable
-        self.fname.setText(fname)
+        self.fname.setText(finame)
         self.fname.setReadOnly(True)
         self.lname.setText(lname)
         self.lname.setReadOnly(True)

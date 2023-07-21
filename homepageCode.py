@@ -13,7 +13,7 @@ hostx = sqlx[0]
 userx = sqlx[1]
 passwdx = sqlx[2]
 global conn
-conn = mys.connect(host = hostx, user = userx, passwd = 'ashmitiscool')
+conn = mys.connect(host = hostx, user = userx, passwd = passwdx)
 global cursor
 cursor = conn.cursor()
 
@@ -44,6 +44,8 @@ class Ui_HomePage(QMainWindow):
 
 
     def openMenuWindow(self):
+        global name
+        global pwd
         name = self.name.text()
         pwd = self.pwd.text()
         cursor.execute("use Cinemax;")
@@ -51,6 +53,8 @@ class Ui_HomePage(QMainWindow):
             cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
             cursor.execute(cmd)
             out = cursor.fetchall()
+            out= out[0]
+            
             print(out)
             if out==[]:
                 self.error.setVisible(True)
