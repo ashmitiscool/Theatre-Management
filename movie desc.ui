@@ -49,13 +49,13 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="name">
+    <widget class="QLabel" name="movieName">
      <property name="geometry">
       <rect>
        <x>7</x>
-       <y>150</y>
-       <width>298</width>
-       <height>67</height>
+       <y>76</y>
+       <width>581</width>
+       <height>141</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -87,7 +87,7 @@
       <rect>
        <x>7</x>
        <y>209</y>
-       <width>145</width>
+       <width>581</width>
        <height>40</height>
       </rect>
      </property>
@@ -128,7 +128,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="backButton">
      <property name="geometry">
       <rect>
        <x>11</x>
@@ -162,9 +162,9 @@ QPushButton:pressed{
      </property>
     </widget>
     <zorder>banner</zorder>
-    <zorder>name</zorder>
+    <zorder>movieName</zorder>
     <zorder>YearRating</zorder>
-    <zorder>pushButton_6</zorder>
+    <zorder>backButton</zorder>
    </widget>
    <widget class="QLabel" name="picture">
     <property name="geometry">
@@ -212,13 +212,13 @@ QPushButton:pressed{
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="movieDescLabel">
     <property name="geometry">
      <rect>
       <x>18</x>
       <y>295</y>
       <width>564</width>
-      <height>166</height>
+      <height>211</height>
      </rect>
     </property>
     <property name="styleSheet">

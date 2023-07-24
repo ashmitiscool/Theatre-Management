@@ -5,6 +5,7 @@ import sys
 from homepageCode import *
 
 cursor.execute("use Cinemax;")
+# Found the issue, its in the below line, you have taken the info from the name and pwd before it was updated, you have to import from Sql again every time ran this window
 cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
 cursor.execute(cmd)
 out = cursor.fetchall()
@@ -59,6 +60,7 @@ class Ui_Profile(QMainWindow):
         # fe.close()
         try:
             cursor.execute(f'update users set fname="{fname}",lname="{lname}",loc="{loc}",ph="{ph}" where uid="{email}";')
+            conn.commit()
 
         except:
             print('Error in exporting to sql')

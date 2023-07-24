@@ -13,7 +13,7 @@ hostx = sqlx[0]
 userx = sqlx[1]
 passwdx = sqlx[2]
 global conn
-conn = mys.connect(host = hostx, user = userx, passwd = passwdx)
+conn = mys.connect(host = hostx, user = userx, passwd = 'ashmitiscool')
 global cursor
 cursor = conn.cursor()
 

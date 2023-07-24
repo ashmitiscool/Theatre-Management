@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QLineEdit, QWidget, QMessageBox
+from PyQt5.QtWidgets import QLineEdit, QWidget, QMessageBox, QPushButton, QLabel
 from PyQt5 import uic
 class Ui_movieDesc(QWidget):
     def __init__(self, mov):
@@ -11,8 +11,22 @@ class Ui_movieDesc(QWidget):
         uic.loadUi('movie desc.ui',self)
 
         # Defining Widgets
-        #self.submitButton = self.findChild(QPushButton, 'signupSubmit')
+        self.backButton = self.findChild(QPushButton, 'backButton')
+        self.movieName = self.findChild(QLabel, 'movieName')
+        self.movieDescLabel = self.findChild(QLabel, 'movieDescLabel')
 
+        self.backButton.clicked.connect(self.openRecmded)
+
+        self.movieName.setText(mov)
+
+        self.movieDescDict = {'The Dark Knight':"Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as \"The Joker\" appears in Gotham, creating a new wave of chaos. Batman's struggle against The Joker becomes deeply personal, forcing him to \"confront everything he believes\" and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes.",
+                              'Titanic':'Titanic',
+                              'The Godfather':'Father of all Gods'}
+
+
+
+        if mov in self.movieDescDict:
+            self.movieDescLabel.setText(self.movieDescDict[mov])
 
 
     def openRecmded(self):

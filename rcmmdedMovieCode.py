@@ -121,7 +121,7 @@ class Ui_recommended(QWidget):
                     print('Error2')
 
 
-    def displayMovieDesc(self, mov='None'):
+    def displayMovieDesc(self):
         mov = self.movieName1.text()
         print(mov)
         if mov != '':
