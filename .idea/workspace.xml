@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="idk if i pushed before (no duplicate movies)">
-      <change afterPath="$PROJECT_DIR$/movieDesc.py" afterDir="false" />
+    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="in recommended code made it open the movie Desc window when button pressed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homepageCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepageCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rcmmdedMovieCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/rcmmdedMovieCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommended.ui" beforeDir="false" afterPath="$PROJECT_DIR$/recommended.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sql.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689351589852</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="in recommended code made it open the movie Desc window when button pressed.">
+      <created>1689868234633</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689868234633</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +152,7 @@
     <MESSAGE value="I am not gay" />
     <MESSAGE value="idk" />
     <MESSAGE value="idk if i pushed before (no duplicate movies)" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk if i pushed before (no duplicate movies)" />
+    <MESSAGE value="in recommended code made it open the movie Desc window when button pressed." />
+    <option name="LAST_COMMIT_MESSAGE" value="in recommended code made it open the movie Desc window when button pressed." />
   </component>
 </project>

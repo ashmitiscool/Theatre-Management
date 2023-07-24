@@ -8,8 +8,10 @@ cursor.execute("use Cinemax;")
 cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
 cursor.execute(cmd)
 out = cursor.fetchall()
+print(out)
 out= out[0]
 email = out[2]
+print(email)
 finame = out[3]
 lname = out[4]
 loc = out[5]
@@ -20,6 +22,10 @@ class Ui_Profile(QMainWindow):
         super(Ui_Profile,self).__init__()
 
         uic.loadUi('profile.ui',self)
+
+        self.editfname = self.findChild(QPushButton,'editfname')
+        self.fname = self.findChild(QLineEdit,'fname')
+
         self.fname.setText(finame)
         self.fname.setReadOnly(True)
         self.lname.setText(lname)
@@ -46,10 +52,16 @@ class Ui_Profile(QMainWindow):
         email = self.email.text()
         ph = self.ph.text()
         loc = self.loc.text()
-        fe = open('info.txt','w+')
-        txt = fname+','+lname+','+email+','+ph+','+loc
-        fe.write(txt)
-        fe.close()
+        print(fname,lname,email,ph,loc)
+        # fe = open('info.txt','w+')
+        # txt = fname+','+lname+','+email+','+ph+','+loc
+        # fe.write(txt)
+        # fe.close()
+        try:
+            cursor.execute(f'update users set fname="{fname}",lname="{lname}",loc="{loc}",ph="{ph}" where uid="{email}";')
+
+        except:
+            print('Error in exporting to sql')
         from menuCode import Ui_Menu
         self.close()
         self.menu_window = Ui_Menu()
