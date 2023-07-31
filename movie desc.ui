@@ -241,7 +241,7 @@ QPushButton:pressed{
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="bookNowButton">
     <property name="geometry">
      <rect>
       <x>601</x>

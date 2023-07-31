@@ -221,6 +221,39 @@ color: rgb(248, 251, 255)
       </property>
      </item>
     </widget>
+    <widget class="QLabel" name="movieNameLabel">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>90</y>
+       <width>181</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Movie Name:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
@@ -312,7 +345,7 @@ QPushButton:pressed{
      <rect>
       <x>42</x>
       <y>296</y>
-      <width>186</width>
+      <width>251</width>
       <height>34</height>
      </rect>
     </property>
@@ -596,7 +629,7 @@ QPushButton:pressed{
      <rect>
       <x>42</x>
       <y>323</y>
-      <width>185</width>
+      <width>251</width>
       <height>35</height>
      </rect>
     </property>
@@ -604,7 +637,7 @@ QPushButton:pressed{
      <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
+	font: 8pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
     </property>
@@ -629,7 +662,7 @@ QPushButton:pressed{
      <rect>
       <x>43</x>
       <y>354</y>
-      <width>186</width>
+      <width>251</width>
       <height>124</height>
      </rect>
     </property>
@@ -1520,7 +1553,7 @@ QPushButton:pressed{
      <rect>
       <x>44</x>
       <y>475</y>
-      <width>185</width>
+      <width>251</width>
       <height>35</height>
      </rect>
     </property>
@@ -1528,7 +1561,7 @@ QPushButton:pressed{
      <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
+	font: 28pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
     </property>

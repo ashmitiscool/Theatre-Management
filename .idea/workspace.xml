@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="Tried to update SQL for profile window, but to no avail, try to continue">
+    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="Updating profile 70% done, problem is in comment,&#10;also did some things for movieDesc.py">
+      <change afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seatsCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepageCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepageCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie desc.ui" beforeDir="false" afterPath="$PROJECT_DIR$/movie desc.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDesc.py" beforeDir="false" afterPath="$PROJECT_DIR$/movieDesc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rcmmdedMovieCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/rcmmdedMovieCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seats.ui" beforeDir="false" afterPath="$PROJECT_DIR$/seats.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690210864678</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updating profile 70% done, problem is in comment,&#10;also did some things for movieDesc.py">
+      <created>1690213473456</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690213473456</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +172,7 @@
     <MESSAGE value="idk if i pushed before (no duplicate movies)" />
     <MESSAGE value="in recommended code made it open the movie Desc window when button pressed." />
     <MESSAGE value="Tried to update SQL for profile window, but to no avail, try to continue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tried to update SQL for profile window, but to no avail, try to continue" />
+    <MESSAGE value="Updating profile 70% done, problem is in comment,&#10;also did some things for movieDesc.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating profile 70% done, problem is in comment,&#10;also did some things for movieDesc.py" />
   </component>
 </project>
