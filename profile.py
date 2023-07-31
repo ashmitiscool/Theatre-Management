@@ -5,12 +5,20 @@ import sys
 from homepageCode import *
 
 cursor.execute("use Cinemax;")
+f = open('info.txt','r+')
+inforaw = f.read()
+info = inforaw.split('*_*')
+namex = info[0]
+pwdx = info[1]
+
 # Found the issue, its in the below line, you have taken the info from the name and pwd before it was updated, you have to import from Sql again every time ran this window
-cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
+cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(namex,pwdx)
+f.truncate(0)
+f.close()
 cursor.execute(cmd)
 out = cursor.fetchall()
 print(out)
-out= out[0]
+out = out[0]
 email = out[2]
 print(email)
 finame = out[3]
@@ -59,7 +67,8 @@ class Ui_Profile(QMainWindow):
         # fe.write(txt)
         # fe.close()
         try:
-            cursor.execute(f'update users set fname="{fname}",lname="{lname}",loc="{loc}",ph="{ph}" where uid="{email}";')
+            cmd = "update users set fname=\'{}\',lname=\'{}\',loc=\'{}\',ph=\'{}\' where uid=\'{}\'".format(fname,lname,loc,ph,email)
+            cursor.execute(cmd)
             conn.commit()
 
         except:

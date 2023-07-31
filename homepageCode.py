@@ -4,6 +4,8 @@ from PyQt5 import uic
 import sys
 import mysql.connector as mys
 
+
+
 #MySQL Connection: Enter your SQL parameters in sql.txt
 #in the txt file...1st param: host, 2nd: root, 3rd:password...do not delete the commas
 f = open('sql.txt','r')
@@ -13,9 +15,12 @@ hostx = sqlx[0]
 userx = sqlx[1]
 passwdx = sqlx[2]
 global conn
-conn = mys.connect(host = hostx, user = userx, passwd = 'ashmitiscool')
+conn = mys.connect(host = hostx, user = userx, passwd = 'entry')
+f.close()
 global cursor
 cursor = conn.cursor()
+f = open('info.txt','a+')
+
 
 # Actually login page
 # Page to start the program
@@ -44,12 +49,13 @@ class Ui_HomePage(QMainWindow):
 
 
     def openMenuWindow(self):
-        global name
-        global pwd
         name = self.name.text()
         pwd = self.pwd.text()
         cursor.execute("use Cinemax;")
         try:
+            strg = name+'*_*'+pwd
+            f.write(strg)
+            f.close()
             cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
             cursor.execute(cmd)
             out = cursor.fetchall()
