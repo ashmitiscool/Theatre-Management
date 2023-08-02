@@ -34,7 +34,7 @@ class Ui_Menu(QMainWindow):
         self.close()
         self.profile_wind = Ui_Profile()
         self.profile_wind.show()
-
+    #to undo point
     def openDialogBox(self):
         # Create a message box object
         msg = QMessageBox()
@@ -48,17 +48,23 @@ class Ui_Menu(QMainWindow):
         # If the user clicked OK, open the homepage window
         if response == QMessageBox.Yes:
             self.openLoginWindow()
+            self.clearInfoFile()
         else:
             pass
 
     def openLoginWindow(self):
         from homepageCode import Ui_HomePage
         self.close()
-        self.menu_window = Ui_HomePage()
-        self.menu_window.show()
+        self.homepage_wind = Ui_HomePage()
+        self.homepage_wind.show()
+
 
     def exitProg(self):
         QApplication.quit()
+
+    def clearInfoFile(self):
+        with open('info.txt', 'w') as f:
+            f.truncate(0)
 
 
 

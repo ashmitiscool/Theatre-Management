@@ -67,7 +67,7 @@ class Ui_Profile(QMainWindow):
         # fe.write(txt)
         # fe.close()
         try:
-            cmd = "update users set fname=\'{}\',lname=\'{}\',loc=\'{}\',ph=\'{}\' where uid=\'{}\'".format(fname,lname,loc,ph,email)
+            cmd = "update users set fname=\"{}\",lname=\"{}\",loc=\"{}\",ph=\"{}\" where uid=\"{}\"".format(fname,lname,loc,ph,email)
             cursor.execute(cmd)
             conn.commit()
 

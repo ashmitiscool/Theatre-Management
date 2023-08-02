@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QMessageBox, QDialog, QApplication, QLabel, QPushBut
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 import sys
-from homepageCode import *
+from homepageCode import cursor,conn
 
 ##cursor.execute('drop database if exists Cinemax;')
 cursor.execute('create database if not exists Cinemax;')
@@ -18,12 +18,14 @@ class Ui_Signup(QDialog):
 
         # Defining Widgets
         self.submitButton = self.findChild(QPushButton, 'signupSubmit')
+        self.backButton = self.findChild(QPushButton, 'backButton')
 
         #Sets Error to Invisible
         self.error.setVisible(False)
 
         # When button pressed, Open new window and add info to database
         self.submitButton.clicked.connect(self.openDialogBox)
+        self.backButton.clicked.connect(self.openHomepageWindow)
 
 
     def openDialogBox(self):
@@ -60,6 +62,9 @@ class Ui_Signup(QDialog):
         self.close()
         self.menu_window = Ui_HomePage()
         self.menu_window.show()
+
+
+
 
 
 

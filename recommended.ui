@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>836</width>
-    <height>700</height>
+    <width>844</width>
+    <height>723</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -73,7 +73,7 @@ QScrollBar::handle:vertical:pressed{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>809</width>
+        <width>816</width>
         <height>912</height>
        </rect>
       </property>
@@ -318,28 +318,6 @@ QPushButton:pressed{
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="movieLabel2">
-             <property name="minimumSize">
-              <size>
-               <width>200</width>
-               <height>300</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>200</width>
-               <height>300</height>
-              </size>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
            <item row="2" column="0">
             <widget class="QPushButton" name="movieButton1">
              <property name="text">
@@ -455,6 +433,31 @@ QPushButton:pressed{
             <widget class="QLabel" name="movieName5">
              <property name="text">
               <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="movieLabel2">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>

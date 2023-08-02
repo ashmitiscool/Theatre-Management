@@ -6,6 +6,10 @@ from PyQt5.QtWidgets import QCompleter
 from PyQt5.QtGui import QPixmap
 import PyQt5
 import random
+import mysql.connector as mys
+mycon = mys.connect(host='localhost',user='root',passwd='ashmitiscool',auth_plugin='mysql_native_password',database='cinemax')
+mycursor = mycon.cursor()
+
 import sys
 class Ui_recommended(QWidget):
     def __init__(self):
@@ -62,7 +66,12 @@ class Ui_recommended(QWidget):
         # Create a QStringListModel and a QCompleter
         self.model = QStringListModel()
         # List of movie names here (Should be extracted from SQL)
-        self.movieList = ['Avatar', 'Titanic', 'The Godfather', 'The Dark Knight', 'Inception', 'Shrek', 'Spiderman']
+        # Undo point
+        query = "SELECT MovieName FROM movies"
+        mycursor.execute(query)
+        result = mycursor.fetchall()
+        self.movieList = [row[0] for row in result]
+        #self.movieList = ['Avatar', 'Titanic', 'The Godfather', 'The Dark Knight', 'Inception', 'Shrek', 'Spiderman']
         self.model.setStringList(self.movieList)
 
         # Completer stuff
@@ -74,13 +83,20 @@ class Ui_recommended(QWidget):
         # Set the model and the completer for the movieSearchBox
         self.movieSearchBox.setCompleter(self.completer)
         # List of movies banners here (Should be extracted from SQL)
-        self.imageList = {'Avatar':'Pictures\\samp.jpg',
-                          'Titanic':'Pictures\\samp.jpg',
-                          'The Godfather':'Pictures\\samp.jpg',
-                          'The Dark Knight':'Pictures\\samp.jpg',
-                          'Inception':'Pictures\\samp.jpg',
-                          'Shrek':'Pictures\\samp.jpg',
-                          'Spiderman':'Pictures\\samp.jpg'}
+        # Undo point
+
+        query = "SELECT MovieName, MovieImage FROM movies"
+        mycursor.execute(query)
+        result = mycursor.fetchall()
+
+        self.imageList = {row[0]: row[1] for row in result}
+        # self.imageList = {'Avatar':'Pictures\\avatar.jpg',
+        #                   'Titanic':'Pictures\\titanic.jpg',
+        #                   'The Godfather':'Pictures\\samp.jpg',
+        #                   'The Dark Knight':'Pictures\\dark_knight.jpg',
+        #                   'Inception':'Pictures\\inception.jpg',
+        #                   'Shrek':'Pictures\\shrek.jpg',
+        #                   'Spiderman':'Pictures\\samp.jpg'}
 
     # This is the point which marks the place to undo code XD
     def displayMovies(self):

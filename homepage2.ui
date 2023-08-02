@@ -38,9 +38,9 @@
     <widget class="QLabel" name="logo">
      <property name="geometry">
       <rect>
-       <x>100</x>
+       <x>0</x>
        <y>60</y>
-       <width>301</width>
+       <width>501</width>
        <height>151</height>
       </rect>
      </property>
@@ -111,7 +111,7 @@ border-radius:30px;
 	border:none;
 	border-radius:10px;
 	padding:10px;
-	font: 12pt &quot;Nasalization Rg&quot;;
+	font: 10pt &quot;Nasalization Rg&quot;;
 	color: rgb(0, 85, 127,100);
 	background-color: rgba(56, 176, 166, 150);
 }
@@ -174,7 +174,7 @@ QLineEdit:focus{
 	border:none;
 	border-radius:10px;
 	padding:10px;
-	font: 12pt &quot;Nasalization Rg&quot;;
+	font: 10pt &quot;Nasalization Rg&quot;;
 	color: rgb(0, 85, 127,100);
 	background-color: rgba(56, 176, 166, 150);
 }
