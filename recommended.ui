@@ -274,28 +274,6 @@ QPushButton:pressed{
              </property>
             </widget>
            </item>
-           <item row="0" column="2">
-            <widget class="QLabel" name="movieLabel3">
-             <property name="minimumSize">
-              <size>
-               <width>200</width>
-               <height>300</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>200</width>
-               <height>300</height>
-              </size>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
            <item row="5" column="0">
             <widget class="QLabel" name="movieLabel4">
              <property name="minimumSize">
@@ -441,6 +419,31 @@ QPushButton:pressed{
            </item>
            <item row="0" column="1">
             <widget class="QLabel" name="movieLabel2">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="movieLabel3">
              <property name="minimumSize">
               <size>
                <width>200</width>

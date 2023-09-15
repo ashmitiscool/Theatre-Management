@@ -1,1 +1,0 @@
-a=input("I am not gay")

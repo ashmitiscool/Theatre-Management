@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="did a bunch of stuff idk">
-      <change afterPath="$PROJECT_DIR$/adminCLI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startingProg.py" afterDir="false" />
+    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="Made CLI for Admin, other bunch of things!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage.ui" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage2.ui" beforeDir="false" afterPath="$PROJECT_DIR$/homepage2.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepageCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepageCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menuCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/menuCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rcmmdedMovieCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/rcmmdedMovieCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cheese.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recommended.ui" beforeDir="false" afterPath="$PROJECT_DIR$/recommended.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.ui" beforeDir="false" afterPath="$PROJECT_DIR$/signup.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signupCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/signupCode.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690820857165</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made CLI for Admin, other bunch of things!">
+      <created>1690995750194</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690995750195</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +227,7 @@
     <MESSAGE value="Tried to update SQL for profile window, but to no avail, try to continue" />
     <MESSAGE value="Updating profile 70% done, problem is in comment,&#10;also did some things for movieDesc.py" />
     <MESSAGE value="did a bunch of stuff idk" />
-    <option name="LAST_COMMIT_MESSAGE" value="did a bunch of stuff idk" />
+    <MESSAGE value="Made CLI for Admin, other bunch of things!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made CLI for Admin, other bunch of things!" />
   </component>
 </project>
