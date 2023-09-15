@@ -54,12 +54,12 @@ class Ui_recommended(QWidget):
 
 
         # Connecting buttons and stuff
-        self.movieButton1.clicked.connect(lambda:self.displayMovieDesc())
-        self.movieButton2.clicked.connect(lambda:self.displayMovieDesc())
-        self.movieButton3.clicked.connect(lambda:self.displayMovieDesc())
-        self.movieButton4.clicked.connect(lambda:self.displayMovieDesc())
-        self.movieButton5.clicked.connect(lambda:self.displayMovieDesc())
-        self.movieButton6.clicked.connect(lambda:self.displayMovieDesc())
+        self.movieButton1.clicked.connect(lambda:self.displayMovieDesc(1))
+        self.movieButton2.clicked.connect(lambda:self.displayMovieDesc(2))
+        self.movieButton3.clicked.connect(lambda:self.displayMovieDesc(3))
+        self.movieButton4.clicked.connect(lambda:self.displayMovieDesc(4))
+        self.movieButton5.clicked.connect(lambda:self.displayMovieDesc(5))
+        self.movieButton6.clicked.connect(lambda:self.displayMovieDesc(6))
         self.searchButton.clicked.connect(lambda:self.displayMovies())
         self.backButton.clicked.connect(lambda:self.openHomePageWindow())
 
@@ -136,10 +136,23 @@ class Ui_recommended(QWidget):
                 except:
                     print('Error2')
 
-
-    def displayMovieDesc(self):
-        mov = self.movieName1.text()
-        print(mov)
+#Place to undo
+    def displayMovieDesc(self,butt):
+        print('Button number is',butt)
+        mov=''
+        if butt == 1:
+            mov = self.movieName1.text()
+        if butt == 2:
+            mov = self.movieName2.text()
+        if butt == 3:
+            mov = self.movieName3.text()
+        if butt == 4:
+            mov = self.movieName4.text()
+        if butt == 5:
+            mov = self.movieName5.text()
+        if butt == 6:
+            mov = self.movieName6.text()
+        print('Mov name is ',mov)
         if mov != '':
             from movieDesc import Ui_movieDesc
             self.close()

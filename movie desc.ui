@@ -82,7 +82,7 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="YearRating">
+    <widget class="QLabel" name="DateLabel">
      <property name="geometry">
       <rect>
        <x>7</x>
@@ -95,7 +95,7 @@
       <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
+	font: 10pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
      </property>
@@ -163,10 +163,10 @@ QPushButton:pressed{
     </widget>
     <zorder>banner</zorder>
     <zorder>movieName</zorder>
-    <zorder>YearRating</zorder>
+    <zorder>DateLabel</zorder>
     <zorder>backButton</zorder>
    </widget>
-   <widget class="QLabel" name="picture">
+   <widget class="QLabel" name="movieBannerImage">
     <property name="geometry">
      <rect>
       <x>613</x>
