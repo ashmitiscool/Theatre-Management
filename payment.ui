@@ -82,12 +82,12 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="YearRating">
+    <widget class="QLabel" name="movieName">
      <property name="geometry">
       <rect>
        <x>12</x>
        <y>98</y>
-       <width>185</width>
+       <width>351</width>
        <height>40</height>
       </rect>
      </property>
@@ -95,7 +95,7 @@
       <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
+	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
      </property>
@@ -115,12 +115,12 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="YearRating_2">
+    <widget class="QLabel" name="timing">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>151</y>
-       <width>172</width>
+       <width>411</width>
        <height>40</height>
       </rect>
      </property>
@@ -128,7 +128,7 @@
       <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
+	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
      </property>
@@ -148,12 +148,12 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="YearRating_3">
+    <widget class="QLabel" name="seatsLabel">
      <property name="geometry">
       <rect>
        <x>12</x>
        <y>199</y>
-       <width>172</width>
+       <width>441</width>
        <height>40</height>
       </rect>
      </property>
@@ -161,7 +161,7 @@
       <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
+	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
      </property>
@@ -181,20 +181,20 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="YearRating_4">
+    <widget class="QLabel" name="costLabel">
      <property name="geometry">
       <rect>
        <x>474</x>
        <y>143</y>
-       <width>172</width>
-       <height>40</height>
+       <width>271</width>
+       <height>91</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
+	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
      </property>
@@ -242,105 +242,6 @@
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="movie">
-     <property name="geometry">
-      <rect>
-       <x>99</x>
-       <y>101</y>
-       <width>185</width>
-       <height>40</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-	padding: 10;
-	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
-	background-color: rgba(255, 255, 255, 0);
-}</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#c8c8c8;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="timings">
-     <property name="geometry">
-      <rect>
-       <x>107</x>
-       <y>153</y>
-       <width>185</width>
-       <height>40</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-	padding: 10;
-	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
-	background-color: rgba(255, 255, 255, 0);
-}</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#c8c8c8;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="seats">
-     <property name="geometry">
-      <rect>
-       <x>93</x>
-       <y>199</y>
-       <width>185</width>
-       <height>40</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-	padding: 10;
-	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
-	background-color: rgba(255, 255, 255, 0);
-}</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
@@ -398,7 +299,7 @@ QPushButton:pressed{
       <string>Proceed &gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="cancelButton">
      <property name="geometry">
       <rect>
        <x>60</x>

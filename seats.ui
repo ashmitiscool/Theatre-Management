@@ -134,23 +134,23 @@ color: rgb(248, 251, 255)
      </property>
      <property name="maximumDate">
       <date>
-       <year>2023</year>
-       <month>7</month>
-       <day>18</day>
+       <year>2025</year>
+       <month>1</month>
+       <day>1</day>
       </date>
      </property>
      <property name="minimumDate">
       <date>
        <year>2023</year>
-       <month>7</month>
-       <day>15</day>
+       <month>1</month>
+       <day>1</day>
       </date>
      </property>
      <property name="date">
       <date>
        <year>2023</year>
-       <month>7</month>
-       <day>15</day>
+       <month>1</month>
+       <day>1</day>
       </date>
      </property>
     </widget>
@@ -351,21 +351,21 @@ QPushButton:pressed{
     </property>
     <layout class="QGridLayout" name="premium">
      <item row="0" column="3">
-      <widget class="QCheckBox" name="p1_4">
+      <widget class="QCheckBox" name="A4">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="QCheckBox" name="p1_3">
+      <widget class="QCheckBox" name="A3">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QCheckBox" name="p1_1">
+      <widget class="QCheckBox" name="A1">
        <property name="text">
         <string/>
        </property>
@@ -381,56 +381,56 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QCheckBox" name="p1_2">
+      <widget class="QCheckBox" name="A2">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="5">
-      <widget class="QCheckBox" name="p1_6">
+      <widget class="QCheckBox" name="A6">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="9">
-      <widget class="QCheckBox" name="p1_10">
+      <widget class="QCheckBox" name="A10">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="6">
-      <widget class="QCheckBox" name="p1_7">
+      <widget class="QCheckBox" name="A7">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="8">
-      <widget class="QCheckBox" name="p1_9">
+      <widget class="QCheckBox" name="A9">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="4">
-      <widget class="QCheckBox" name="p1_5">
+      <widget class="QCheckBox" name="A5">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="7">
-      <widget class="QCheckBox" name="p1_8">
+      <widget class="QCheckBox" name="A8">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QCheckBox" name="p2_1">
+      <widget class="QCheckBox" name="B1">
        <property name="text">
         <string/>
        </property>
@@ -446,7 +446,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QCheckBox" name="p2_2">
+      <widget class="QCheckBox" name="B2">
        <property name="text">
         <string/>
        </property>
@@ -462,7 +462,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QCheckBox" name="p2_3">
+      <widget class="QCheckBox" name="B3">
        <property name="text">
         <string/>
        </property>
@@ -478,7 +478,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="QCheckBox" name="p2_4">
+      <widget class="QCheckBox" name="B4">
        <property name="text">
         <string/>
        </property>
@@ -494,7 +494,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="4">
-      <widget class="QCheckBox" name="p2_5">
+      <widget class="QCheckBox" name="B5">
        <property name="text">
         <string/>
        </property>
@@ -510,7 +510,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="5">
-      <widget class="QCheckBox" name="p2_6">
+      <widget class="QCheckBox" name="B6">
        <property name="text">
         <string/>
        </property>
@@ -526,7 +526,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="6">
-      <widget class="QCheckBox" name="p2_7">
+      <widget class="QCheckBox" name="B7">
        <property name="text">
         <string/>
        </property>
@@ -542,7 +542,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="7">
-      <widget class="QCheckBox" name="p2_8">
+      <widget class="QCheckBox" name="B8">
        <property name="text">
         <string/>
        </property>
@@ -558,7 +558,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="8">
-      <widget class="QCheckBox" name="p2_9">
+      <widget class="QCheckBox" name="B9">
        <property name="text">
         <string/>
        </property>
@@ -574,7 +574,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="9">
-      <widget class="QCheckBox" name="p2_10">
+      <widget class="QCheckBox" name="B10">
        <property name="text">
         <string/>
        </property>
@@ -668,7 +668,7 @@ QPushButton:pressed{
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="3" column="3">
-      <widget class="QCheckBox" name="n4_4">
+      <widget class="QCheckBox" name="F4">
        <property name="text">
         <string/>
        </property>
@@ -684,7 +684,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="7">
-      <widget class="QCheckBox" name="n3_8">
+      <widget class="QCheckBox" name="E8">
        <property name="text">
         <string/>
        </property>
@@ -700,7 +700,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="7">
-      <widget class="QCheckBox" name="n2_8">
+      <widget class="QCheckBox" name="D8">
        <property name="text">
         <string/>
        </property>
@@ -716,7 +716,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="8">
-      <widget class="QCheckBox" name="n2_9">
+      <widget class="QCheckBox" name="D9">
        <property name="text">
         <string/>
        </property>
@@ -732,7 +732,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="9">
-      <widget class="QCheckBox" name="n3_10">
+      <widget class="QCheckBox" name="E10">
        <property name="text">
         <string/>
        </property>
@@ -748,7 +748,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="5">
-      <widget class="QCheckBox" name="n2_6">
+      <widget class="QCheckBox" name="D6">
        <property name="text">
         <string/>
        </property>
@@ -764,7 +764,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="9">
-      <widget class="QCheckBox" name="n2_10">
+      <widget class="QCheckBox" name="D10">
        <property name="text">
         <string/>
        </property>
@@ -780,7 +780,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="6">
-      <widget class="QCheckBox" name="n2_7">
+      <widget class="QCheckBox" name="D7">
        <property name="text">
         <string/>
        </property>
@@ -796,7 +796,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QCheckBox" name="n2_1">
+      <widget class="QCheckBox" name="D1">
        <property name="text">
         <string/>
        </property>
@@ -812,7 +812,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QCheckBox" name="n2_2">
+      <widget class="QCheckBox" name="D2">
        <property name="text">
         <string/>
        </property>
@@ -828,7 +828,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="QCheckBox" name="n2_4">
+      <widget class="QCheckBox" name="D4">
        <property name="text">
         <string/>
        </property>
@@ -844,21 +844,21 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="0" column="8">
-      <widget class="QCheckBox" name="n1_9">
+      <widget class="QCheckBox" name="C9">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="6">
-      <widget class="QCheckBox" name="n1_7">
+      <widget class="QCheckBox" name="C7">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="1" column="4">
-      <widget class="QCheckBox" name="n2_5">
+      <widget class="QCheckBox" name="D5">
        <property name="text">
         <string/>
        </property>
@@ -874,7 +874,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QCheckBox" name="n2_3">
+      <widget class="QCheckBox" name="D3">
        <property name="text">
         <string/>
        </property>
@@ -890,28 +890,28 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="0" column="7">
-      <widget class="QCheckBox" name="n1_8">
+      <widget class="QCheckBox" name="C8">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="4">
-      <widget class="QCheckBox" name="n1_5">
+      <widget class="QCheckBox" name="C5">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="9">
-      <widget class="QCheckBox" name="n1_10">
+      <widget class="QCheckBox" name="C10">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="3" column="5">
-      <widget class="QCheckBox" name="n4_6">
+      <widget class="QCheckBox" name="F6">
        <property name="text">
         <string/>
        </property>
@@ -927,7 +927,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QCheckBox" name="n5_3">
+      <widget class="QCheckBox" name="G3">
        <property name="text">
         <string/>
        </property>
@@ -943,7 +943,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="8">
-      <widget class="QCheckBox" name="n4_9">
+      <widget class="QCheckBox" name="F9">
        <property name="text">
         <string/>
        </property>
@@ -959,7 +959,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="6">
-      <widget class="QCheckBox" name="n3_7">
+      <widget class="QCheckBox" name="E7">
        <property name="text">
         <string/>
        </property>
@@ -975,7 +975,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="6">
-      <widget class="QCheckBox" name="n4_7">
+      <widget class="QCheckBox" name="F7">
        <property name="text">
         <string/>
        </property>
@@ -991,7 +991,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="9">
-      <widget class="QCheckBox" name="n4_10">
+      <widget class="QCheckBox" name="F10">
        <property name="text">
         <string/>
        </property>
@@ -1007,7 +1007,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="7">
-      <widget class="QCheckBox" name="n4_8">
+      <widget class="QCheckBox" name="F8">
        <property name="text">
         <string/>
        </property>
@@ -1023,7 +1023,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="5">
-      <widget class="QCheckBox" name="n3_6">
+      <widget class="QCheckBox" name="E6">
        <property name="text">
         <string/>
        </property>
@@ -1039,7 +1039,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="3">
-      <widget class="QCheckBox" name="n5_4">
+      <widget class="QCheckBox" name="G4">
        <property name="text">
         <string/>
        </property>
@@ -1055,7 +1055,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="2">
-      <widget class="QCheckBox" name="n3_3">
+      <widget class="QCheckBox" name="E3">
        <property name="text">
         <string/>
        </property>
@@ -1071,14 +1071,14 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="0" column="3">
-      <widget class="QCheckBox" name="n1_4">
+      <widget class="QCheckBox" name="C4">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QCheckBox" name="n6_2">
+      <widget class="QCheckBox" name="H2">
        <property name="text">
         <string/>
        </property>
@@ -1094,21 +1094,21 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="QCheckBox" name="n1_3">
+      <widget class="QCheckBox" name="C3">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QCheckBox" name="n1_2">
+      <widget class="QCheckBox" name="C2">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QCheckBox" name="n1_1">
+      <widget class="QCheckBox" name="C1">
        <property name="text">
         <string/>
        </property>
@@ -1124,7 +1124,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QCheckBox" name="n6_3">
+      <widget class="QCheckBox" name="H3">
        <property name="text">
         <string/>
        </property>
@@ -1140,14 +1140,14 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="0" column="5">
-      <widget class="QCheckBox" name="n1_6">
+      <widget class="QCheckBox" name="C6">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
      <item row="5" column="3">
-      <widget class="QCheckBox" name="n6_4">
+      <widget class="QCheckBox" name="H4">
        <property name="text">
         <string/>
        </property>
@@ -1163,7 +1163,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QCheckBox" name="n3_1">
+      <widget class="QCheckBox" name="E1">
        <property name="text">
         <string/>
        </property>
@@ -1179,7 +1179,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QCheckBox" name="n5_1">
+      <widget class="QCheckBox" name="G1">
        <property name="text">
         <string/>
        </property>
@@ -1195,7 +1195,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QCheckBox" name="n5_2">
+      <widget class="QCheckBox" name="G2">
        <property name="text">
         <string/>
        </property>
@@ -1211,7 +1211,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QCheckBox" name="n3_2">
+      <widget class="QCheckBox" name="E2">
        <property name="text">
         <string/>
        </property>
@@ -1227,7 +1227,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QCheckBox" name="n4_2">
+      <widget class="QCheckBox" name="F2">
        <property name="text">
         <string/>
        </property>
@@ -1243,7 +1243,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="2">
-      <widget class="QCheckBox" name="n4_3">
+      <widget class="QCheckBox" name="F3">
        <property name="text">
         <string/>
        </property>
@@ -1259,7 +1259,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="3">
-      <widget class="QCheckBox" name="n3_4">
+      <widget class="QCheckBox" name="E4">
        <property name="text">
         <string/>
        </property>
@@ -1275,7 +1275,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="4">
-      <widget class="QCheckBox" name="n4_5">
+      <widget class="QCheckBox" name="F5">
        <property name="text">
         <string/>
        </property>
@@ -1291,7 +1291,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="4">
-      <widget class="QCheckBox" name="n6_5">
+      <widget class="QCheckBox" name="H5">
        <property name="text">
         <string/>
        </property>
@@ -1307,7 +1307,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="4">
-      <widget class="QCheckBox" name="n3_5">
+      <widget class="QCheckBox" name="E5">
        <property name="text">
         <string/>
        </property>
@@ -1323,7 +1323,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QCheckBox" name="n4_1">
+      <widget class="QCheckBox" name="F1">
        <property name="text">
         <string/>
        </property>
@@ -1339,7 +1339,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="4">
-      <widget class="QCheckBox" name="n5_5">
+      <widget class="QCheckBox" name="G5">
        <property name="text">
         <string/>
        </property>
@@ -1355,7 +1355,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QCheckBox" name="n6_1">
+      <widget class="QCheckBox" name="H1">
        <property name="text">
         <string/>
        </property>
@@ -1371,7 +1371,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="2" column="8">
-      <widget class="QCheckBox" name="n3_9">
+      <widget class="QCheckBox" name="E9">
        <property name="text">
         <string/>
        </property>
@@ -1387,7 +1387,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="5">
-      <widget class="QCheckBox" name="n5_6">
+      <widget class="QCheckBox" name="G6">
        <property name="text">
         <string/>
        </property>
@@ -1403,7 +1403,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="6">
-      <widget class="QCheckBox" name="n5_7">
+      <widget class="QCheckBox" name="G7">
        <property name="text">
         <string/>
        </property>
@@ -1419,7 +1419,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="7">
-      <widget class="QCheckBox" name="n5_8">
+      <widget class="QCheckBox" name="G8">
        <property name="text">
         <string/>
        </property>
@@ -1435,7 +1435,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="8">
-      <widget class="QCheckBox" name="n5_9">
+      <widget class="QCheckBox" name="G9">
        <property name="text">
         <string/>
        </property>
@@ -1451,7 +1451,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="4" column="9">
-      <widget class="QCheckBox" name="n5_10">
+      <widget class="QCheckBox" name="G10">
        <property name="text">
         <string/>
        </property>
@@ -1467,7 +1467,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="5">
-      <widget class="QCheckBox" name="n6_6">
+      <widget class="QCheckBox" name="H6">
        <property name="text">
         <string/>
        </property>
@@ -1483,7 +1483,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="6">
-      <widget class="QCheckBox" name="n6_7">
+      <widget class="QCheckBox" name="H7">
        <property name="text">
         <string/>
        </property>
@@ -1499,7 +1499,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="7">
-      <widget class="QCheckBox" name="n6_8">
+      <widget class="QCheckBox" name="H8">
        <property name="text">
         <string/>
        </property>
@@ -1515,7 +1515,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="8">
-      <widget class="QCheckBox" name="n6_9">
+      <widget class="QCheckBox" name="H9">
        <property name="text">
         <string/>
        </property>
@@ -1531,7 +1531,7 @@ QPushButton:pressed{
       </widget>
      </item>
      <item row="5" column="9">
-      <widget class="QCheckBox" name="n6_10">
+      <widget class="QCheckBox" name="H10">
        <property name="text">
         <string/>
        </property>
@@ -1697,7 +1697,7 @@ QPushButton:pressed{
         </font>
        </property>
        <property name="text">
-        <string>Popcorn - Rs. 300</string>
+        <string>Popcorn - Rs. 100</string>
        </property>
       </widget>
      </item>
@@ -1709,7 +1709,7 @@ QPushButton:pressed{
         </font>
        </property>
        <property name="text">
-        <string>Pretzels - Rs. 330</string>
+        <string>Pretzels - Rs. 130</string>
        </property>
       </widget>
      </item>
