@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="Completed movie desc in movieDesc.py, also fixed a bug">
+    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="almost done with paymentCode.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepageCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepageCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment.ui" beforeDir="false" afterPath="$PROJECT_DIR$/payment.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paymentCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/paymentCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommended.ui" beforeDir="false" afterPath="$PROJECT_DIR$/recommended.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seats.ui" beforeDir="false" afterPath="$PROJECT_DIR$/seats.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seatsCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/seatsCode.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,8 +156,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.startingProg" />
-        <item itemvalue="Python.movieDesc" />
         <item itemvalue="Python.homepageCode" />
+        <item itemvalue="Python.movieDesc" />
         <item itemvalue="Python.adminCLI" />
         <item itemvalue="Python.signupCode" />
       </list>
@@ -244,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694795073571</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="almost done with paymentCode.py">
+      <created>1699791690185</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699791690185</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +273,7 @@
     <MESSAGE value="did a bunch of stuff idk" />
     <MESSAGE value="Made CLI for Admin, other bunch of things!" />
     <MESSAGE value="Completed movie desc in movieDesc.py, also fixed a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed movie desc in movieDesc.py, also fixed a bug" />
+    <MESSAGE value="almost done with paymentCode.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done with paymentCode.py" />
   </component>
 </project>

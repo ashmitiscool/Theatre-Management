@@ -26,11 +26,14 @@ class Ui_payment(QWidget):
             self.seatsLabel = self.findChild(QLabel,'seatsLabel')
             self.costLabel = self.findChild(QLabel,'costLabel')
             self.timingLabel = self.findChild(QLabel,'timing')
+            self.passLineEdit = self.findChild(QLineEdit,'passwd')
+            self.proceedButton = self.findChild(QPushButton,'proceedButton')
 
             # Mapping Buttons
             self.cancelButton.clicked.connect(self.openSeatsWindow)
+            self.proceedButton.clicked.connect(self.openThankYouWindow)
         except:
-            print('Error in Findchilding: paymentCode.py')
+            print('Error in Findchilding or Connecting Buttons: paymentCode.py')
 
         try:
             self.movieName.setText('Movie: ' + self.mov)
@@ -45,6 +48,15 @@ class Ui_payment(QWidget):
         self.close()
         self.seats_window = Ui_seatsCode(self.mov)
         self.seats_window.show()
+
+    def openThankYouWindow(self):
+        f = open('passwd.txt','r')
+        passd = f.read()
+        if self.passLineEdit.text() != passd:
+            self.passLineEdit.setText('')
+            print('Wrong Password!!!')
+        else:
+            print('Correct Password GGs')
 
 
 

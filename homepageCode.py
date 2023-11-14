@@ -23,7 +23,6 @@ f = open('info.txt','a+')
 
 
 # Actually login page
-# Page to start the program
 class Ui_HomePage(QMainWindow):
     def __init__(self):
         super(Ui_HomePage, self).__init__()
@@ -47,21 +46,18 @@ class Ui_HomePage(QMainWindow):
         self.resetButton.clicked.connect(self.resetTextField)
 
         self.show()
-
+#Undo area no 3
+#Undo area no 2
 #Undo area
 
     def openMenuWindow(self):
         name = self.name.text()
         pwd = self.pwd.text()
+        with open('passwd.txt','w') as f:
+            f.write(pwd)
         if name!='admin' and pwd!='admin':
             cursor.execute("use Cinemax;")
             try:
-                try:
-                    strg = name+'*_*'+pwd
-                    f.write(strg)
-                    f.close()
-                except:
-                    print('file error')
                 cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
                 cursor.execute(cmd)
                 out = cursor.fetchall()
