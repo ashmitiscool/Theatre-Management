@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>728</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-16</x>
+     <y>-17</y>
+     <width>842</width>
+     <height>686</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 251, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>16</y>
+      <width>825</width>
+      <height>665</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(52, 52, 52);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="name">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>83</y>
+       <width>298</width>
+       <height>67</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#c8c8c8;&quot;&gt;THANK YOU!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="movieName">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>159</y>
+       <width>351</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 12pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c8c8c8;&quot;&gt;The ticket will be sent to your mail!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="subtotal">
+     <property name="geometry">
+      <rect>
+       <x>482</x>
+       <y>179</y>
+       <width>298</width>
+       <height>67</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; color:#c8c8c8;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="proceed">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>238</y>
+       <width>230</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>38</width>
+       <height>38</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border:none;
+	border-radius:15px;
+	background-color: rgb(145, 177, 194,150);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>Menu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="proceed_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>297</y>
+       <width>230</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>38</width>
+       <height>38</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border:none;
+	border-radius:15px;
+	background-color: rgb(145, 177, 194,150);
+	font: 14pt &quot;Nasalization Rg&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(145, 177, 194,100);
+}
+QPushButton:pressed{
+	background-color: rgb(145, 177, 194,80);
+}</string>
+     </property>
+     <property name="text">
+      <string>Log Out</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Pictures/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
