@@ -94,7 +94,7 @@
      <property name="styleSheet">
       <string notr="true">QLabel{
 	padding: 10;
-	color: rgb(0, 85, 127);
+	color: rgb(159, 159, 159);
 	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
@@ -127,7 +127,7 @@
      <property name="styleSheet">
       <string notr="true">QLabel{
 	padding: 10;
-	color: rgb(0, 85, 127);
+	color: rgb(159, 159, 159);
 	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
@@ -160,7 +160,7 @@
      <property name="styleSheet">
       <string notr="true">QLabel{
 	padding: 10;
-	color: rgb(0, 85, 127);
+	color: rgb(159, 159, 159);
 	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
@@ -193,7 +193,7 @@
      <property name="styleSheet">
       <string notr="true">QLabel{
 	padding: 10;
-	color: rgb(0, 85, 127);
+	color: rgb(159, 159, 159);
 	font: 12pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
