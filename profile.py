@@ -6,15 +6,14 @@ from homepageCode import *
 
 cursor.execute("use Cinemax;")
 f = open('info.txt','r+')
-inforaw = f.read()
-info = inforaw.split('*_*')
-namex = info[0]
-pwdx = info[1]
+info = f.read()
+f.close()
+infos = info.split('!!!!!')
+name = infos[0]
+pwd = infos[1]
 
 # Found the issue, its in the below line, you have taken the info from the name and pwd before it was updated, you have to import from Sql again every time ran this window
-cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(namex,pwdx)
-f.truncate(0)
-f.close()
+cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
 cursor.execute(cmd)
 out = cursor.fetchall()
 print(out)
@@ -73,6 +72,7 @@ class Ui_Profile(QMainWindow):
 
         except:
             print('Error in exporting to sql')
+        conn.commit()
         from menuCode import Ui_Menu
         self.close()
         self.menu_window = Ui_Menu()

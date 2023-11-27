@@ -11,11 +11,10 @@ hostx = sqlx[0]
 userx = sqlx[1]
 passwdx = sqlx[2]
 global conn
-conn = mys.connect(host = 'localhost', user = 'root', passwd = 'ashmitiscool')
+conn = mys.connect(host = 'localhost', user = 'root', passwd = 'entry')
 f.close()
 global cursor
 cursor = conn.cursor()
-f = open('info.txt','a+')
 
 #MySQL Connection: Enter your SQL parameters in sql.txt
 #in the txt file...1st param: host, 2nd: root, 3rd:password...do not delete the commas
@@ -71,7 +70,11 @@ class Ui_HomePage(QMainWindow):
                 self.error.setVisible(True)
                 print('Except error')
                 return 0
-
+            
+            with open('info.txt','w') as x:
+                data = name+"!!!!!"+pwd
+                x.write(data)
+             
             from menuCode import Ui_Menu
             self.close()
             self.menu_window = Ui_Menu()
