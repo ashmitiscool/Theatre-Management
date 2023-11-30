@@ -11,7 +11,7 @@ hostx = sqlx[0]
 userx = sqlx[1]
 passwdx = sqlx[2]
 global conn
-conn = mys.connect(host = 'localhost', user = 'root', passwd = 'entry')
+conn = mys.connect(host = 'localhost', user = 'root', passwd = 'ashmitiscool')
 f.close()
 global cursor
 cursor = conn.cursor()
@@ -44,6 +44,7 @@ class Ui_HomePage(QMainWindow):
         self.signupButton.clicked.connect(self.openSignupWindow)
         self.resetButton.clicked.connect(self.resetTextField)
 
+        self.setWindowTitle('Login')
         self.show()
 #Undo area no 3
 #Undo area no 2

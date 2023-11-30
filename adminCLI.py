@@ -41,8 +41,11 @@ if var == 'y':
                 else:
                     print('Cancelled')
 
+            #Undo Area
+
+
             elif wht == 'mi':
-                new_image_path = input('Enter the new movie image path (Type cancelxx to cancel edit): ')
+                new_image_path = input('Enter the new movie image path (Without Double Quotes & Double Slash) (Type cancelxx to cancel edit): ')
                 if new_image_path != 'cancelxx':
                     query = f"UPDATE movies SET MovieImage = '{new_image_path}' WHERE MovieName = '{movi}'"
                     mycursor.execute(query)

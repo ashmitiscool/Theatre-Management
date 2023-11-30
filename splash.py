@@ -1,6 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QDialog, QApplication, QSplashScreen
-from PyQt5.uic import loadUi
+#IMport undo place here
+from PyQt5 import uic
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QGridLayout, QWidget, QDesktopWidget
 import time
@@ -8,7 +9,7 @@ import time
 class SplashScreen(QSplashScreen):
     def __init__(self):
         super(QSplashScreen,self).__init__()
-        loadUi('splash.ui',self)
+        uic.loadUi('splash.ui',self)
         qtRectangle = self.frameGeometry()
         centerPoint = QDesktopWidget().availableGeometry().center()
         qtRectangle.moveCenter(centerPoint)

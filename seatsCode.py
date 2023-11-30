@@ -9,6 +9,7 @@ class Ui_seatsCode(QWidget):
 
         # Load the ui file
         uic.loadUi('seats.ui',self)
+        self.setWindowTitle('Booking')
 
         # Defining Widgets
         self.selected_seats_list = []

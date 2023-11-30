@@ -85,8 +85,8 @@
     <widget class="QLabel" name="movieName">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>159</y>
+       <x>190</x>
+       <y>160</y>
        <width>351</width>
        <height>40</height>
       </rect>
@@ -109,7 +109,7 @@
       <bool>true</bool>
      </property>
      <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      <set>Qt::AlignCenter</set>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
@@ -148,7 +148,7 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="proceed">
+    <widget class="QPushButton" name="menuButton">
      <property name="geometry">
       <rect>
        <x>250</x>
@@ -181,7 +181,7 @@ QPushButton:pressed{
       <string>Menu</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="proceed_2">
+    <widget class="QPushButton" name="logoutButton">
      <property name="geometry">
       <rect>
        <x>250</x>

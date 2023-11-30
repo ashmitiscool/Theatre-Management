@@ -30,6 +30,7 @@ class Ui_Profile(QMainWindow):
         super(Ui_Profile,self).__init__()
 
         uic.loadUi('profile.ui',self)
+        self.setWindowTitle('Profile')
 
         self.editfname = self.findChild(QPushButton,'editfname')
         self.fname = self.findChild(QLineEdit,'fname')

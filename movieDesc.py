@@ -14,6 +14,7 @@ class Ui_movieDesc(QWidget):
 
         # Load the ui file
         uic.loadUi('movie desc.ui',self)
+        self.setWindowTitle('Movie Description')
         try:
             cursor.execute('select * from movies where MovieName="{}"'.format(mov)) # Order of data: (0)MovieName, (1)Image Path, (2)MovieDesc,
                                                                                     # (3)MovieDate

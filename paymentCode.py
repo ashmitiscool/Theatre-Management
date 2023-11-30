@@ -18,6 +18,7 @@ class Ui_payment(QWidget):
         self.seatsString = self.seatsString[:-2]
 
         uic.loadUi('payment.ui',self)
+        self.setWindowTitle('Payment')
 
         # Declaring UI Objects
         try:
@@ -57,6 +58,10 @@ class Ui_payment(QWidget):
             print('Wrong Password!!!')
         else:
             print('Correct Password GGs')
+            from thankyouWindow import Ui_Thankyou
+            self.close()
+            self.window = Ui_Thankyou()
+            self.window.show()
 
 
 

@@ -21,6 +21,8 @@ class Ui_Menu(QMainWindow):
         self.bookButton.clicked.connect(self.openRecmded)
         self.pushButton_2.clicked.connect(self.openProfile)
 
+        self.setWindowTitle('Menu')
+
 
 
     def openRecmded(self):

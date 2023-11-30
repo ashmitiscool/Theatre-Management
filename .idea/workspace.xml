@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="almost done with paymentCode.py">
+    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="Done with paymentCode.py">
+      <change afterPath="$PROJECT_DIR$/thankyouWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminCLI.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminCLI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homepageCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepageCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment.ui" beforeDir="false" afterPath="$PROJECT_DIR$/payment.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menuCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/menuCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movieDesc.py" beforeDir="false" afterPath="$PROJECT_DIR$/movieDesc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paymentCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/paymentCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rcmmdedMovieCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/rcmmdedMovieCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seats.ui" beforeDir="false" afterPath="$PROJECT_DIR$/seats.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seatsCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/seatsCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash.py" beforeDir="false" afterPath="$PROJECT_DIR$/splash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thank you.ui" beforeDir="false" afterPath="$PROJECT_DIR$/thank you.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="signupCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="splash" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Theatre-Management" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,7 +133,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/signupCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/splash.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.startingProg" />
+        <item itemvalue="Python.adminCLI" />
+        <item itemvalue="Python.splash" />
         <item itemvalue="Python.homepageCode" />
         <item itemvalue="Python.movieDesc" />
-        <item itemvalue="Python.adminCLI" />
-        <item itemvalue="Python.signupCode" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699791690185</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Done with paymentCode.py">
+      <created>1699936603388</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699936603389</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +291,7 @@
     <MESSAGE value="Made CLI for Admin, other bunch of things!" />
     <MESSAGE value="Completed movie desc in movieDesc.py, also fixed a bug" />
     <MESSAGE value="almost done with paymentCode.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done with paymentCode.py" />
+    <MESSAGE value="Done with paymentCode.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done with paymentCode.py" />
   </component>
 </project>

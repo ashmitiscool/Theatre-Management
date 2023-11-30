@@ -18,6 +18,8 @@ class Ui_recommended(QWidget):
         # Load the ui file
         uic.loadUi("recommended.ui", self)
 
+        self.setWindowTitle('Recommended Movies')
+
         # Defining Widgets
         self.movieSearchBox = self.findChild(QLineEdit, 'movieSearchBox')
         self.searchButton = self.findChild(QPushButton, 'searchButton')
