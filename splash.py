@@ -34,10 +34,10 @@ class Ui_starting():
 if __name__ == '__main__':
     app = QApplication(sys.argv)
      
-    splash = SplashScreen()
-    splash.show()
-    splash.forward()
+    ##splash = SplashScreen()
+    ##splash.show()
+    ##splash.forward()
     UIWindow = Ui_starting()
-    splash.hide()
-    splash.finish(self,UIWindow)
+    ##splash.hide()
+    #splash.finish(self,UIWindow)
     app.exec_()

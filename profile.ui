@@ -86,341 +86,149 @@
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_3">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>99</x>
-      <y>186</y>
-      <width>641</width>
-      <height>365</height>
+      <x>50</x>
+      <y>185</y>
+      <width>643</width>
+      <height>368</height>
      </rect>
     </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(241, 244, 247,255);</string>
+     <string notr="true">QTabWidget{
+border:none;
+background-color:rgb(52, 52, 52);
+}</string>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <property name="lineWidth">
+    <property name="currentIndex">
      <number>0</number>
     </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-    <widget class="QLabel" name="YearRating_3">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>33</y>
-       <width>262</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
+    <widget class="QWidget" name="basics">
+     <attribute name="title">
+      <string>Page 1</string>
+     </attribute>
+     <widget class="QLabel" name="YearRating_6">
+      <property name="geometry">
+       <rect>
+        <x>327</x>
+        <y>109</y>
+        <width>262</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
 	font: 38pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;First Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="fname">
-     <property name="geometry">
-      <rect>
-       <x>39</x>
-       <y>79</y>
-       <width>214</width>
-       <height>33</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLineEdit{ 
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Phone&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="loc">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>260</y>
+        <width>256</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
 border-width: 1px; 
 border-style: solid;
 border-color:  red 0 black 0;
 border-top-style:none; 
+border: none;
+border-bottom: 2px solid transparent; 
+selection-background-color: lightgray; 
+transition: border-bottom 0.3s ease-in-out; 
+
 
 font: 10pt &quot;Nasalization Rg&quot;;
 padding:5px;
-}</string>
-     </property>
-     <property name="frame">
-      <bool>true</bool>
-     </property>
-     <property name="placeholderText">
-      <string>Enter your first name...</string>
-     </property>
-     <property name="clearButtonEnabled">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="YearRating_4">
-     <property name="geometry">
-      <rect>
-       <x>349</x>
-       <y>32</y>
-       <width>262</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
+}
+
+
+QLineEdit:focus {
+    border-bottom: 2px solid black;  
+}
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Your location...</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="YearRating_4">
+      <property name="geometry">
+       <rect>
+        <x>326</x>
+        <y>7</y>
+        <width>262</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
 	padding: 10;
 	color: rgb(0, 85, 127);
 	font: 38pt &quot;Nasalization Rg&quot;;
 	background-color: rgba(255, 255, 255, 0);
 }</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Last Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lname">
-     <property name="geometry">
-      <rect>
-       <x>360</x>
-       <y>78</y>
-       <width>214</width>
-       <height>33</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLineEdit{ 
-border-width: 1px; 
-border-style: solid;
-border-color:  red 0 black 0;
-border-top-style:none; 
-
-font: 10pt &quot;Nasalization Rg&quot;;
-padding:5px;
-}</string>
-     </property>
-     <property name="placeholderText">
-      <string>Enter your last name...</string>
-     </property>
-     <property name="clearButtonEnabled">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="editfname">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>80</y>
-       <width>31</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-	border-radius:15px;
-    border:none;
-}
-
-</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="editlname">
-     <property name="geometry">
-      <rect>
-       <x>573</x>
-       <y>81</y>
-       <width>31</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-	border-radius:15px;
-    border:none;
-}
-
-</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
-     </property>
-    </widget>
-    <widget class="QLabel" name="YearRating_5">
-     <property name="geometry">
-      <rect>
-       <x>29</x>
-       <y>135</y>
-       <width>262</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-	padding: 10;
-	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
-	background-color: rgba(255, 255, 255, 0);
-}</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Username:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="editemail">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>182</y>
-       <width>31</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-	border-radius:15px;
-    border:none;
-}
-
-</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="email">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>181</y>
-       <width>256</width>
-       <height>33</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLineEdit{ 
-border-width: 1px; 
-border-style: solid;
-border-color:  red 0 black 0;
-border-top-style:none; 
-
-font: 10pt &quot;Nasalization Rg&quot;;
-padding:5px;
-}</string>
-     </property>
-     <property name="frame">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-     </property>
-     <property name="placeholderText">
-      <string>...how?</string>
-     </property>
-     <property name="clearButtonEnabled">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="ph">
-     <property name="geometry">
-      <rect>
-       <x>361</x>
-       <y>180</y>
-       <width>217</width>
-       <height>33</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLineEdit{ 
-border-width: 1px; 
-border-style: solid;
-border-color:  red 0 black 0;
-border-top-style:none; 
-
-font: 10pt &quot;Nasalization Rg&quot;;
-padding:5px;
-}</string>
-     </property>
-     <property name="frame">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-     </property>
-     <property name="placeholderText">
-      <string>Enter your phone...</string>
-     </property>
-     <property name="clearButtonEnabled">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="editph">
-     <property name="geometry">
-      <rect>
-       <x>580</x>
-       <y>181</y>
-       <width>31</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Last Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editph">
+      <property name="geometry">
+       <rect>
+        <x>557</x>
+        <y>156</y>
+        <width>31</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
 	border-radius:15px;
     border:none;
 }
@@ -431,156 +239,151 @@ QPushButton:hover{
 }
 
 </string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
-     </property>
-    </widget>
-    <widget class="QLabel" name="YearRating_6">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>134</y>
-       <width>262</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-	padding: 10;
-	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
-	background-color: rgba(255, 255, 255, 0);
-}</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Phone&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="loc">
-     <property name="geometry">
-      <rect>
-       <x>39</x>
-       <y>285</y>
-       <width>256</width>
-       <height>33</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLineEdit{ 
-border-width: 1px; 
-border-style: solid;
-border-color:  red 0 black 0;
-border-top-style:none; 
-
-font: 10pt &quot;Nasalization Rg&quot;;
-padding:5px;
-}</string>
-     </property>
-     <property name="frame">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-     </property>
-     <property name="placeholderText">
-      <string>Your location...</string>
-     </property>
-     <property name="clearButtonEnabled">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="editloc">
-     <property name="geometry">
-      <rect>
-       <x>299</x>
-       <y>286</y>
-       <width>31</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editloc">
+      <property name="geometry">
+       <rect>
+        <x>276</x>
+        <y>261</y>
+        <width>31</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
 	border-radius:15px;
     border:none;
 }
 
 </string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
-     </property>
-    </widget>
-    <widget class="QLabel" name="YearRating_7">
-     <property name="geometry">
-      <rect>
-       <x>28</x>
-       <y>239</y>
-       <width>262</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-	padding: 10;
-	color: rgb(0, 85, 127);
-	font: 38pt &quot;Nasalization Rg&quot;;
-	background-color: rgba(255, 255, 255, 0);
-}</string>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Location&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="done">
-     <property name="geometry">
-      <rect>
-       <x>372</x>
-       <y>280</y>
-       <width>230</width>
-       <height>38</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>38</width>
-       <height>38</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editlname">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>56</y>
+        <width>31</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius:15px;
+    border:none;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editemail">
+      <property name="geometry">
+       <rect>
+        <x>277</x>
+        <y>157</y>
+        <width>31</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius:15px;
+    border:none;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ph">
+      <property name="geometry">
+       <rect>
+        <x>338</x>
+        <y>155</y>
+        <width>217</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+border-width: 1px; 
+border-style: solid;
+border-color:  red 0 black 0;
+border-top-style:none; 
+border: none;
+border-bottom: 2px solid transparent; 
+selection-background-color: lightgray; 
+transition: border-bottom 0.3s ease-in-out; 
+
+
+font: 10pt &quot;Nasalization Rg&quot;;
+padding:5px;
+}
+
+
+QLineEdit:focus {
+    border-bottom: 2px solid black;  
+}
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Enter your phone...</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="done">
+      <property name="geometry">
+       <rect>
+        <x>349</x>
+        <y>255</y>
+        <width>230</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>38</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
 	border:none;
 	border-radius:15px;
 	background-color: rgb(145, 177, 194,150);
@@ -592,10 +395,338 @@ QPushButton:hover{
 QPushButton:pressed{
 	background-color: rgb(145, 177, 194,80);
 }</string>
-     </property>
-     <property name="text">
-      <string>Proceed &gt;</string>
-     </property>
+      </property>
+      <property name="text">
+       <string>Proceed &gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="YearRating_3">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>8</y>
+        <width>262</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;First Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="YearRating_7">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>214</y>
+        <width>262</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Location&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="fname">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>54</y>
+        <width>214</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+border-width: 1px; 
+border-style: solid;
+border-color:  red 0 black 0;
+border-top-style:none; 
+border: none;
+border-bottom: 2px solid transparent; 
+selection-background-color: lightgray; 
+transition: border-bottom 0.3s ease-in-out; 
+
+
+font: 10pt &quot;Nasalization Rg&quot;;
+padding:5px;
+}
+
+
+QLineEdit:focus {
+    border-bottom: 2px solid black;  
+}
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Enter your first name...</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="email">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>156</y>
+        <width>256</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+border-width: 1px; 
+border-style: solid;
+border-color:  red 0 black 0;
+border-top-style:none; 
+border: none;
+border-bottom: 2px solid transparent; 
+selection-background-color: lightgray; 
+transition: border-bottom 0.3s ease-in-out; 
+
+
+font: 10pt &quot;Nasalization Rg&quot;;
+padding:5px;
+}
+
+
+QLineEdit:focus {
+    border-bottom: 2px solid black;  
+}
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Enter email:</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="YearRating_5">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>110</y>
+        <width>262</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lname">
+      <property name="geometry">
+       <rect>
+        <x>337</x>
+        <y>53</y>
+        <width>214</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+border-width: 1px; 
+border-style: solid;
+border-color:  red 0 black 0;
+border-top-style:none; 
+border: none;
+border-bottom: 2px solid transparent; 
+selection-background-color: lightgray; 
+transition: border-bottom 0.3s ease-in-out; 
+
+
+font: 10pt &quot;Nasalization Rg&quot;;
+padding:5px;
+}
+
+
+QLineEdit:focus {
+    border-bottom: 2px solid black;  
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter your last name...</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editfname">
+      <property name="geometry">
+       <rect>
+        <x>237</x>
+        <y>55</y>
+        <width>31</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius:15px;
+    border:none;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Pictures/tick.svg</normaloff>Pictures/tick.svg</iconset>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="userpic">
+     <attribute name="title">
+      <string>Page 2</string>
+     </attribute>
+     <widget class="QLabel" name="pic">
+      <property name="geometry">
+       <rect>
+        <x>393</x>
+        <y>32</y>
+        <width>220</width>
+        <height>270</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="YearRating_8">
+      <property name="geometry">
+       <rect>
+        <x>27</x>
+        <y>20</y>
+        <width>351</width>
+        <height>130</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	padding: 10;
+	color: rgb(0, 85, 127);
+	font: 38pt &quot;Nasalization Rg&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#343434;&quot;&gt;Upload/Change your Profile Picture&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="browse">
+      <property name="geometry">
+       <rect>
+        <x>118</x>
+        <y>154</y>
+        <width>161</width>
+        <height>43</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    padding: 10px 20px;
+    border: none;
+	background-color: rgb(52, 52, 52,200);
+}
+
+QPushButton:hover {
+background-color: rgb(52, 52, 52,170);
+}
+
+QPushButton:pressed{
+background-color: rgb(52, 52, 52,250);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Browse...</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>

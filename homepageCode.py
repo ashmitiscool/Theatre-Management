@@ -11,7 +11,7 @@ hostx = sqlx[0]
 userx = sqlx[1]
 passwdx = sqlx[2]
 global conn
-conn = mys.connect(host = 'localhost', user = 'root', passwd = 'ashmitiscool')
+conn = mys.connect(host = 'localhost', user = 'root', passwd = passwdx)
 f.close()
 global cursor
 cursor = conn.cursor()
@@ -68,6 +68,7 @@ class Ui_HomePage(QMainWindow):
                 print(out)
                 self.error.setVisible(False)
             except:
+                
                 self.error.setVisible(True)
                 print('Except error')
                 return 0

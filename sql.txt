@@ -1,1 +1,1 @@
-localhost,root,ashmitiscool
+localhost,root,entry
