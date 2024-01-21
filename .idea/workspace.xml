@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="splash.py issue resolved" />
+    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -265,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705841739304</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="workspace.xml">
+      <created>1705842155298</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705842155298</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,6 +300,7 @@
     <MESSAGE value="Done with paymentCode.py" />
     <MESSAGE value="Project Done ig" />
     <MESSAGE value="splash.py issue resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="splash.py issue resolved" />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
 </project>
