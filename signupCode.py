@@ -7,7 +7,7 @@ from homepageCode import cursor,conn
 ##cursor.execute('drop database if exists Cinemax;')
 cursor.execute('create database if not exists Cinemax;')
 cursor.execute('use Cinemax;')
-cursor.execute('create table if not exists Users(ID int primary key not null auto_increment, passwd varchar(20) not null, uid varchar(30) not null, fname varchar(20), lname varchar(20), loc varchar(20), ph varchar(10));')
+cursor.execute('create table if not exists Users(ID int primary key not null auto_increment, passwd varchar(20) not null, uid varchar(30) not null unique, fname varchar(20), lname varchar(20), loc varchar(20), ph varchar(10));')
 
 class Ui_Signup(QDialog):
     def __init__(self):

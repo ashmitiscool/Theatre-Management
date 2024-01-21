@@ -1,6 +1,9 @@
-from PyQt5.QtWidgets import QMainWindow, QMessageBox, QApplication, QLabel, QPushButton
+from PyQt5.QtWidgets import QMainWindow, QMessageBox, QApplication, QLabel,QDialog,QPushButton,QFileDialog
 from PyQt5 import QtWidgets
 from PyQt5 import uic
+from PyQt5 import QtGui,QtCore
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtCore import Qt
 import sys
 from homepageCode import *
 
@@ -11,6 +14,9 @@ f.close()
 infos = info.split('!!!!!')
 name = infos[0]
 pwd = infos[1]
+
+cmd = 'create table if not exists pfps(uid varchar(30) not null primary key, picloc varchar(700) not null);'
+cursor.execute(cmd)
 
 # Found the issue, its in the below line, you have taken the info from the name and pwd before it was updated, you have to import from Sql again every time ran this window
 cmd = "select * from Users where uid = \'{}\' and passwd = \'{}\';".format(name,pwd)
@@ -24,6 +30,16 @@ finame = out[3]
 lname = out[4]
 loc = out[5]
 ph = out[6]
+
+cmd = 'select picloc from pfps where uid = \'{}\''.format(name)
+cursor.execute(cmd)
+out = cursor.fetchall()
+print(out)
+pfpath = ''
+if len(out)==0:
+    pfpath = 'null'
+else:
+    pfpath = out
 
 class Ui_Profile(QMainWindow):
     def __init__(self):
@@ -46,12 +62,17 @@ class Ui_Profile(QMainWindow):
         self.loc.setText(loc)
         self.loc.setReadOnly(True)
 
+        if pfpath!='null':
+            pixmap = QPixmap(pfpath[0][0]).scaled(220, 270)
+            self.pic.setPixmap(pixmap)
+        
         self.editfname.clicked.connect(self.changeFname)
         self.editlname.clicked.connect(self.changeLname)
         self.editemail.clicked.connect(self.changeEmail)
         self.editph.clicked.connect(self.changePh)
         self.editloc.clicked.connect(self.changeLoc)
         self.done.clicked.connect(self.apply)
+        self.browse.clicked.connect(self.changePic)
         #closes file
         f.close()
 
@@ -78,7 +99,22 @@ class Ui_Profile(QMainWindow):
         self.close()
         self.menu_window = Ui_Menu()
         self.menu_window.show()
-    
+
+    def changePic(self):
+        fname = QFileDialog.getOpenFileName(self,"Open File",'Pictures','Images (*.png *.jpg)')
+        pixmap = QPixmap(fname[0]).scaled(220, 270)
+        self.pic.setPixmap(pixmap)
+        print(fname[0])
+        cmd = ''
+        print(pfpath)
+        if pfpath=='null':
+            cmd = "insert into pfps values('{}','{}');".format(name,fname[0])
+        else:
+            cmd = "update pfps set picloc = '{}' where uid = '{}';".format(fname[0],name)
+        print(cmd)
+        cursor.execute(cmd)
+        conn.commit()            
+            
     def changeFname(self):
         self.fname.setReadOnly(False)
 
