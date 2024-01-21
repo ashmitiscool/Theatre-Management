@@ -1,5 +1,7 @@
 from PyQt5.QtWidgets import QLineEdit, QWidget, QMessageBox, QPushButton, QLabel
 from PyQt5 import uic
+import smtplib
+
 class Ui_payment(QWidget):
     def __init__(self, mov, selected_seats_list,cost,timing):
         super(Ui_payment, self).__init__()
@@ -53,15 +55,10 @@ class Ui_payment(QWidget):
     def openThankYouWindow(self):
         f = open('passwd.txt','r')
         passd = f.read()
-        if self.passLineEdit.text() != passd:
-            self.passLineEdit.setText('')
-            print('Wrong Password!!!')
-        else:
-            print('Correct Password GGs')
-            from thankyouWindow import Ui_Thankyou
-            self.close()
-            self.window = Ui_Thankyou()
-            self.window.show()
+        from thankyouWindow import Ui_Thankyou
+        self.close()
+        self.window = Ui_Thankyou()
+        self.window.show()
 
 
 

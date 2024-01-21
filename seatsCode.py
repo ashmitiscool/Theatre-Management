@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QLineEdit, QWidget, QMessageBox,QDateEdit, QComboBox
 from PyQt5 import uic
 from homepageCode import *
 
-cmd = "create table if not exists booked(User varchar(500) unique, seats varchar(1000), movie varchar(500));"
+cmd = "create table if not exists booked(User varchar(500) unique, seats varchar(1000), movie varchar(500), snacks varchar(500), price int);"
 cursor.execute(cmd)
 conn.commit()
 
@@ -122,14 +122,18 @@ class Ui_seatsCode(QWidget):
                 data = data.split('!!!!!')
                 current_user = data[0]
             seats = ''
+            snacks = ''
             for item in self.selected_seats_list:
                 seats+=item
                 seats+='.'
+            for item in self.selected_food_list:
+                snacks+=item
+                snacks+='.'
             seats = seats[:-1]
             print(seats)
             print(current_user)
             try:
-                cmd = "insert into booked values('{}','{}','{}');".format(current_user,seats,self.mov)
+                cmd = "insert into booked values('{}','{}','{}','{}','{}');".format(current_user,seats,self.mov,snacks,self.total_cost)
                 print(cmd)
                 cursor.execute(cmd)
                 conn.commit()
