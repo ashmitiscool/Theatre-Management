@@ -1,5 +1,11 @@
 from PyQt5.QtWidgets import QLineEdit, QWidget, QMessageBox,QDateEdit, QComboBox, QPushButton, QLabel, QCheckBox
 from PyQt5 import uic
+from homepageCode import *
+
+cmd = "create table if not exists booked(User varchar(500) unique, seats varchar(1000), movie varchar(500));"
+cursor.execute(cmd)
+conn.commit()
+
 class Ui_seatsCode(QWidget):
     def __init__(self, mov):
         super(Ui_seatsCode, self).__init__()
@@ -22,8 +28,9 @@ class Ui_seatsCode(QWidget):
                 checkbox = self.findChild(QCheckBox, seat_label)
                 self.seat_checkboxes.append(checkbox)
         
-
-
+        #check if occupied:
+        self.checkOcc()
+        
         # FindChilding
         self.backButton = self.findChild(QPushButton,'back')
         self.proceedButton = self.findChild(QPushButton,'proceed')
@@ -35,13 +42,27 @@ class Ui_seatsCode(QWidget):
         self.timing = self.findChild(QComboBox,'timing')
         self.date = self.findChild(QDateEdit,'date')
 
-        self.movieNameLabel.setText(f'Movie Name:\n{mov}')
+        self.movieNameLabel.setText('Movie Name:\n{}'.format(mov))
 
         # Connecting Buttons
         self.backButton.clicked.connect(self.displayMovieDesc)
         self.proceedButton.clicked.connect(self.proceed_button_clicked)
 
+    def checkOcc(self):
+        pass
+##        cmd = 'select * from booked;'
+##        cursor.execute(cmd)
+##        x = cursor.fetchall()
+##        seatChecked = []
+##        for entry in x:
+##            if entry[2] == self.mov:
+##                data = entry[1]
+##                data = data.split('.')
+##                seatChecked.extend(data)
+##        for checkbox in seatChecked:
+##            checkbox.setDisabled(True)
 
+        
     def proceed_button_clicked(self):
         self.selected_seats_list = []
 
@@ -91,14 +112,36 @@ class Ui_seatsCode(QWidget):
             self.selected_food_list.append("Chocolate")
             self.total_cost += 75
 
-
-
-        from paymentCode import Ui_payment
-        self.close()
-        self.timendate = self.timing.currentText()+' '+self.date.date().toString("dd-MM-yyyy")
-        print(self.timendate)
-        self.window = Ui_payment(self.mov, self.selected_seats_list, self.total_cost,self.timendate)
-        self.window.show()
+        if self.total_cost==0 or self.selected_seats_list==[]:
+            self.error.setText('Select a seat!')
+            self.error.setVisible(True)
+        else:
+            current_user = ''
+            with open('info.txt','r') as x:
+                data = x.read()
+                data = data.split('!!!!!')
+                current_user = data[0]
+            seats = ''
+            for item in self.selected_seats_list:
+                seats+=item
+                seats+='.'
+            seats = seats[:-1]
+            print(seats)
+            print(current_user)
+            try:
+                cmd = "insert into booked values('{}','{}','{}');".format(current_user,seats,self.mov)
+                print(cmd)
+                cursor.execute(cmd)
+                conn.commit()
+                from paymentCode import Ui_payment
+                self.close()
+                self.timendate = self.timing.currentText()+' '+self.date.date().toString("dd-MM-yyyy")
+                print(self.timendate)
+                self.window = Ui_payment(self.mov, self.selected_seats_list, self.total_cost,self.timendate)
+                self.window.show()
+            except:
+                self.error.setText('You already booked once, try cancelling your booking..')
+            
 
     def displayMovieDesc(self):
 
