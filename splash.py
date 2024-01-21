@@ -39,5 +39,6 @@ if __name__ == '__main__':
     splash.forward()
     UIWindow = Ui_starting()
     splash.hide()
-    splash.finish(self,UIWindow)
+    #undo point
+
     app.exec_()
