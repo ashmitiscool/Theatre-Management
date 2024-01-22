@@ -19,7 +19,7 @@ class SplashScreen(QSplashScreen):
         
     def forward(self):
         for i in range(0,100):
-                time.sleep(0.1)
+                time.sleep(0.01)
                 self.progressBar.setValue(i)
                 
 class Ui_starting():
@@ -33,11 +33,11 @@ class Ui_starting():
                
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-     
-    ##splash = SplashScreen()
-    ##splash.show()
-    ##splash.forward()
+    
+    splash = SplashScreen()
+    splash.show()
+    splash.forward()
     UIWindow = Ui_starting()
-    ##splash.hide()
+    splash.hide()
     #splash.finish(self,UIWindow)
     app.exec_()
