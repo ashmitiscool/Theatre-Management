@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="workspace.xml" />
+    <list default="true" id="e27c5783-93fd-4308-9205-809b288a2567" name="Changes" comment="workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminCLI.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminCLI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepageCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepageCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passwd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/passwd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rcmmdedMovieCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/rcmmdedMovieCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommended.ui" beforeDir="false" afterPath="$PROJECT_DIR$/recommended.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash.py" beforeDir="false" afterPath="$PROJECT_DIR$/splash.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705842155298</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="workspace.xml">
+      <created>1705842411061</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705842411061</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

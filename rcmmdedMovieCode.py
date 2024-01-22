@@ -7,7 +7,7 @@ from PyQt5.QtGui import QPixmap
 import PyQt5
 import random
 import mysql.connector as mys
-mycon = mys.connect(host='localhost',user='root',passwd='entry',auth_plugin='mysql_native_password',database='cinemax')
+mycon = mys.connect(host='localhost',user='root',passwd='ashmitiscool',auth_plugin='mysql_native_password',database='cinemax')
 mycursor = mycon.cursor()
 
 import sys

@@ -1,5 +1,5 @@
 import mysql.connector as mys
-mycon = mys.connect(host='localhost',user='root',passwd='entry',auth_plugin='mysql_native_password',database='cinemax')
+mycon = mys.connect(host='localhost',user='root',passwd='ashmitiscool',auth_plugin='mysql_native_password',database='cinemax')
 mycursor = mycon.cursor()
 # mycursor.execute('')
 # mycon.commit()
@@ -48,7 +48,7 @@ while running:
                         print('Cancelled!')
 
                 elif wht == 'mi':
-                    new_image_path = input('Enter the new movie image path (Type cancelxx to cancel edit): ')
+                    new_image_path = input('Enter the new movie image path (Type cancelxx to cancel edit):\n ')
                     if new_image_path != 'cancelxx':
                         query = "UPDATE movies SET MovieImage = '{}' WHERE MovieName = '{}'".format(new_image_path,movi)
                         mycursor.execute(query)
@@ -58,7 +58,7 @@ while running:
                         print('Cancelled!')
 
                 elif wht == 'mdesc':
-                    new_description = input('Enter the new movie description (Type cancelxx to cancel edit): ')
+                    new_description = input('Enter the new movie description (Type cancelxx to cancel edit):\n ')
                     if new_description != 'cancelxx':
                         query = "UPDATE movies SET MovieDesc = '{}' WHERE MovieName = '{}'".format(new_description,movi)
                         mycursor.execute(query)
