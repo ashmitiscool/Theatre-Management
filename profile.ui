@@ -102,7 +102,7 @@ background-color:rgb(52, 52, 52);
 }</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="basics">
      <attribute name="title">
@@ -1128,7 +1128,7 @@ QPushButton:pressed{
 }</string>
       </property>
       <property name="text">
-       <string>Reload</string>
+       <string>Refresh</string>
       </property>
      </widget>
     </widget>
