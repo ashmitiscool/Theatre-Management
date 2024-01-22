@@ -20,9 +20,15 @@ class Ui_Menu(QMainWindow):
         self.exitButton.clicked.connect(self.exitProg)
         self.bookButton.clicked.connect(self.openRecmded)
         self.pushButton_2.clicked.connect(self.openProfile)
+        self.about.clicked.connect(self.aboutn)
 
         self.setWindowTitle('Menu')
 
+    def aboutn(self):
+        from aboutCode import Ui_about
+        self.close()
+        self.about_win = Ui_about()
+        self.about_win.show()
 
 
     def openRecmded(self):
