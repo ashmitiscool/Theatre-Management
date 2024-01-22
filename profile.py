@@ -65,6 +65,7 @@ class Ui_Profile(QMainWindow):
         if pfpath!='null':
             pixmap = QPixmap(pfpath[0][0]).scaled(220, 270)
             self.pic.setPixmap(pixmap)
+
         
         self.editfname.clicked.connect(self.changeFname)
         self.editlname.clicked.connect(self.changeLname)
@@ -73,6 +74,8 @@ class Ui_Profile(QMainWindow):
         self.editloc.clicked.connect(self.changeLoc)
         self.done.clicked.connect(self.apply)
         self.browse.clicked.connect(self.changePic)
+        self.reload.clicked.connect(self.Bookings)
+        self.cancel.clicked.connect(self.cancelb)
         #closes file
         f.close()
 
@@ -129,3 +132,36 @@ class Ui_Profile(QMainWindow):
 
     def changeLoc(self):
         self.loc.setReadOnly(False)
+
+    def cancelb(self):
+        cmd = "delete from booked where user = '{}';".format(name)
+        cursor.execute(cmd)
+        conn.commit()
+
+    def Bookings(self):
+    
+        cmd = 'select * from booked;'
+        cursor.execute(cmd)
+        x = cursor.fetchall()
+        mov = ''
+        seats = ''
+        snacks = ''
+        price = 0
+        for datas in x:
+            if datas[0]==name:
+                mov = datas[2]
+                seats = datas[1]
+                snacks = datas[3]
+                price = datas[4]
+                print(datas)
+                break
+        mnsamp = mov
+        self.name.setText(mnsamp)
+        sbsamp = seats
+        self.booked.setText(sbsamp)
+        snsamp = snacks
+        self.snacks.setText(snsamp)
+        prsamp = str(price)
+        self.price.setText(prsamp)
+        print(mnsamp,sbsamp,snsamp,prsamp,sep='$')
+        
